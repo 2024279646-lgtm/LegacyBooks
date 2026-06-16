@@ -188,7 +188,6 @@
             </div>
             
             <h4 class="modal-section-subtitle">Select Payment Method:</h4>
-           <!-- GANTIKAN BORANG LAMA DENGAN INI -->
 <form id="payment-selection-form" onsubmit="prosesBayaran(event)">
     
     <label class="payment-option-label">
@@ -228,79 +227,76 @@
         </div>
     </div>
 
-    <footer class="main-footer">
-        <div class="footer-columns-wrapper">
-            <div class="footer-col-item col-width-large">
-                <h4 class="footer-col-heading">LEGACY BOOKS</h4>
-                <p class="footer-col-paragraph">Preserving Stories, Inspiring Generations. Hub carian buku korporat dan akademik pilihan utama anda.</p>
-            </div>
-            
-            <div class="footer-col-item">
-                <h4 class="footer-col-heading">HELP & SUPPORT</h4>
-                <ul class="footer-quick-links">
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Shipping Info</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-col-item">
-                <h4 class="footer-col-heading">OPERATING HOURS</h4>
-                <p class="footer-label-gold">Mon - Fri:</p>
-                <p class="footer-col-paragraph">9:00 AM - 6:00 PM</p>
-                <p class="footer-label-gold" style="margin-top: 10px;">Sat - Sun:</p>
-                <p class="footer-col-paragraph">Closed</p>
-                <p class="footer-label-gold" style="margin-top: 10px;">Public Holiday:</p>
-                <p class="footer-col-paragraph">Closed</p>
-            </div>
-            
-            <div class="footer-col-item col-width-medium">
-                <h4 class="footer-col-heading">CONTACT US</h4>
-                <p class="footer-col-paragraph">Email: info@legacybooks.com.my</p>
-                <p class="footer-col-paragraph" style="margin-top: 4px;">Email: support@legacybooks.com.my</p>
-                <p class="footer-col-paragraph" style="margin-top: 10px;">Phone: +603-1234 5678</p>
-            </div>
-            
-            <div class="footer-col-item">
-                <h4 class="footer-col-heading">FOLLOW US</h4>
-                <ul class="footer-quick-links">
-                    <li><a href="#">Instagram: @legacybooks</a></li>
-                    <li><a href="#">TikTok: @legacybooks</a></li>
-                    <li><a href="#">Facebook: Legacy Books</a></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
+  <footer class="main-footer">
+    <div class="footer-columns-wrapper">
+        <div class="footer-col-item col-width-large">
+            <h4 class="footer-col-heading">LEGACY BOOKS</h4>
+            <p class="footer-col-paragraph">Preserving Stories, Inspiring Generations. Hub carian buku korporat dan akademik pilihan utama anda.</p>
         </div>
-
-        <div class="footer-horizontal-line"></div>
         
-        <div class="footer-academic-disclaimer">
-            <p><strong>Disclaimer:</strong> This website is NOT the official website of Legacy Books. This website was developed strictly for the purpose of learning XHTML & CSS only for the course IML254 (Introduction to Web Content Development).</p>
-            <p style="margin-top: 25px;">Recommended Browser: Google Chrome or Mozilla Firefox | Best Resolution: 1920x1080 pixels | Last Updated: June 15, 2026</p>
+        <div class="footer-col-item">
+            <h4 class="footer-col-heading">HELP & SUPPORT</h4>
+            <ul class="footer-quick-links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
         </div>
+        
+        <div class="footer-col-item">
+            <h4 class="footer-col-heading">OPERATING HOURS</h4>
+            <p class="footer-label-gold">Mon - Fri:</p>
+            <p class="footer-col-paragraph">9:00 AM - 6:00 PM</p>
+            <p class="footer-label-gold" style="margin-top: 10px;">Sat - Sun:</p>
+            <p class="footer-col-paragraph">Closed</p>
+            <p class="footer-label-gold" style="margin-top: 10px;">Public Holiday:</p>
+            <p class="footer-col-paragraph">Closed</p>
+        </div>
+        
+        <div class="footer-col-item col-width-medium">
+            <h4 class="footer-col-heading">CONTACT US</h4>
+            <p class="footer-col-paragraph">Email: info@legacybooks.com.my</p>
+            <p class="footer-col-paragraph" style="margin-top: 12px;">Email: support@legacybooks.com.my</p>
+            <p class="footer-col-paragraph" style="margin-top: 12px;">Phone: +603-1234 5678</p>
+        </div>
+        
+        <div class="footer-col-item">
+            <h4 class="footer-col-heading">FOLLOW US</h4>
+            <ul class="footer-quick-links">
+                <li><a href="#">Instagram: @legacybooks</a></li>
+                <li><a href="#">TikTok: @legacybooks</a></li>
+                <li><a href="#">Facebook: Legacy Books</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
 
-        <div class="footer-bottom-dark-bar">
-            <p>&copy; 2026 Legacy Books. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div class="footer-horizontal-line"></div>
+    
+    <div class="footer-academic-disclaimer">
+        <p><strong>Disclaimer:</strong> This website is NOT the official website of Legacy Books. This website was developed strictly for the purpose of learning XHTML & CSS only for the course IML254<br>
+        (Introduction to Web Content Development).</p>
+        <p style="margin-top: 15px;">Recommended Browser: Google Chrome or Mozilla Firefox | Best Resolution: 1920x1080 pixels</p>
+        <p style="margin-top: 5px;">Last Updated: June 15, 2026</p>
+    </div>
+
+    <div class="footer-bottom-dark-bar">
+        <p>&copy; 2026 Legacy Books. All Rights Reserved.</p>
+    </div>
+</footer>
 
     <script type="text/javascript">
-        // Array memori sementara untuk menyimpan senarai buku yang dimasukkan ke troli
         var senaraiTroliBuku = [];
 
-        // 1. Fungsi apabila butang Add to Cart ditekan
         function tambahKeTroli(namaBuku) {
-            senaraiTroliBuku.push(namaBuku); // Masukkan nama buku ke dalam senarai array
+            senaraiTroliBuku.push(namaBuku); 
             
-            // Kemas kini angka bilangan pada kaunter troli atas secara automatik
             document.getElementById("top-cart-count").innerHTML = senaraiTroliBuku.length;
             
-            // Paparkan alert seperti biasa
             alert("Success! '" + namaBuku + "' has been added to your cart.");
         }
 
-        // 2. Fungsi klik pada ikon troli utama atas untuk melihat isi kandungannya
         function lihatIsiTroli() {
             if(senaraiTroliBuku.length === 0) {
                 alert("Your cart is currently empty. Start adding some books from the shop!");
@@ -314,18 +310,15 @@
             }
         }
 
-       // // 3. Fungsi membuka pop-up modal kaedah pembayaran (Buy Now) - DIKEMAS KINI
 function bukaPopupBayar(namaBuku, hargaBuku) {
     document.getElementById("modal-book-name").innerHTML = namaBuku;
     document.getElementById("modal-book-price").innerHTML = "RM " + hargaBuku;
     document.getElementById("payment-modal-box").style.display = "block";
     
-    // Sembunyikan semua jenis input tambahan pada awal pembukaan popup
     document.getElementById("bank-dropdown-container").style.display = "none";
     document.getElementById("card-input-container").style.display = "none";
 }
 
-// 4. Fungsi menutup pop-up modal pembayaran - DIKEMAS KINI
 function tutupPopupBayar() {
     document.getElementById("payment-modal-box").style.display = "none";
     document.getElementById("payment-selection-form").reset();
@@ -333,7 +326,6 @@ function tutupPopupBayar() {
     document.getElementById("card-input-container").style.display = "none";
 }
 
-// Fungsi Baharu untuk menguruskan paparan FPX Bank ATAU Nombor Kad Kredit
 function kawalPaparanInputCheckout() {
     var kaedahDipilih = document.querySelector('input[name="payment_method"]:checked').value;
     
@@ -343,7 +335,6 @@ function kawalPaparanInputCheckout() {
     var kotakKad = document.getElementById("card-input-container");
     var inputKad = document.getElementById("card-number-field");
     
-    // Logik untuk Online Banking
     if (kaedahDipilih === "Online Banking") {
         kotakBank.style.display = "block";
         dropdownBank.required = true;
@@ -352,7 +343,6 @@ function kawalPaparanInputCheckout() {
         inputKad.required = false;
         inputKad.value = ""; 
     } 
-    // Logik untuk Credit/Debit Card
     else if (kaedahDipilih === "Credit/Debit Card") {
         kotakKad.style.display = "block";
         inputKad.required = true;
@@ -361,7 +351,6 @@ function kawalPaparanInputCheckout() {
         dropdownBank.required = false;
         dropdownBank.value = "";
     } 
-    // Logik jika pilih E-Wallet
     else {
         kotakBank.style.display = "none";
         dropdownBank.required = false;
@@ -373,7 +362,6 @@ function kawalPaparanInputCheckout() {
     }
 }
 
-// 5. Fungsi memproses transaksi selepas butang bayar di dalam pop-up ditekan - DIKEMAS KINI
 function prosesBayaran(event) {
     event.preventDefault();
     var pilihanKaedah = document.querySelector('input[name="payment_method"]:checked').value;

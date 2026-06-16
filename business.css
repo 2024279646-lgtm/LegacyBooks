@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. GLOBAL RESET & UTILITY
-   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,18 +11,14 @@ body {
     color: #333333;
 }
 
-/* Pembersih Float XHTML Penting */
 .clearfix {
     clear: both;
     display: block;
     height: 0;
 }
 
-/* ==========================================================================
-   2. MAIN HEADER (100% Mengikut image_58a09f.png)
-   ========================================================================== */
 .main-header {
-    background-color: #9eb099; /* Warna hijau sage mengikut imej rujukan */
+    background-color: #9eb099; 
     text-align: center;
     padding: 35px 15px 40px 15px;
 }
@@ -34,14 +28,14 @@ body {
 }
 
 .site-logo {
-    max-height: 140px; /* Saiz logo yang seimbang di tengah-tengah */
+    max-height: 140px; 
     width: auto;
     display: inline-block;
-    background: #ffffff; /* Kotak putih jika fail imej ada latar belakang tulen */
+    background: #ffffff; 
 }
 
 .site-title {
-    font-family: 'Times New Roman', Times, Georgia, serif; /* Font berkaki mengikut imej */
+    font-family: 'Times New Roman', Times, Georgia, serif;
     color: #ffffff;
     font-size: 3.5rem;
     font-weight: bold;
@@ -56,11 +50,8 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* ==========================================================================
-   3. BAR NAVIGASI (Warna Coklat & Susunan Rapat mengikut image_58a09f.png)
-   ========================================================================== */
 .navbar-container {
-    background-color: #83644b; /* Warna coklat tanah liat mengikut imej rujukan */
+    background-color: #83644b; 
     text-align: center;
     padding: 18px 10px;
     width: 100%;
@@ -77,15 +68,14 @@ body {
     font-size: 15px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 22px; /* Jarak padding tepi yang rapat dan kemas */
+    padding: 5px 22px; 
     display: inline-block;
 }
 
 .nav-item:hover, .nav-item.active {
-    color: #f7ebd3 !important; /* Efek keemasan pastel lembut semasa di-hover */
+    color: #f7ebd3 !important;
 }
 
-/* Sistem Dropdown Tradisional */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -123,9 +113,6 @@ body {
     display: block;
 }
 
-/* ==========================================================================
-   4. UTILITY BAR (Kotak Carian & Kedudukan Troli)
-   ========================================================================== */
 .utility-bar {
     max-width: 1200px;
     margin: 35px auto 10px auto;
@@ -171,7 +158,6 @@ body {
     float: right;
 }
 
-/* KEMAS KINI: Menambah kesan hover interaktif pada ikon troli atas */
 .cart-box {
     position: absolute;
     right: 40px;
@@ -199,9 +185,6 @@ body {
     margin-left: 2px;
 }
 
-/* ==========================================================================
-   5. KANDUNGAN GRID KAD BUKU PRODUK (Maksimum 5 Buku Sebaris Sempurna)
-   ========================================================================== */
 .content-container {
     max-width: 1260px; 
     margin: 40px auto 60px auto;
@@ -224,7 +207,6 @@ body {
     font-size: 0; 
 }
 
-/* KEMAS KINI: Ketinggian kad dialih keluar (auto) supaya sepadan dengan pertambahan elemen baharu */
 .book-card-item {
     background: #ffffff;
     padding: 15px 12px;
@@ -294,7 +276,6 @@ body {
     width: 58px;
 }
 
-/* KEMAS KINI: Tulisan status stok warna hijau daun yang kemas */
 .book-stock-status {
     font-size: 13px;
     font-weight: bold;
@@ -327,7 +308,6 @@ body {
     background-color: #705235;
 }
 
-/* KEMAS KINI: Struktur reka bentuk butang Buy Now baharu */
 .book-buy-now-btn {
     background-color: #d49a17;
     color: #ffffff;
@@ -346,11 +326,8 @@ body {
     background-color: #b38112;
 }
 
-/* ==========================================================================
-   6. FOOTER (Wajib Kekal Berada di Paling Bawah - Bersih & Sempurna)
-   ========================================================================== */
 .main-footer {
-    background-color: #83644b; 
+    background-color: #8b6b4f; 
     padding: 60px 0 0 0; 
     text-align: left;
     clear: both;
@@ -359,97 +336,111 @@ body {
 }
 
 .footer-columns-wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .footer-col-item {
-    float: left;
-    width: 17%;
-    padding: 0 10px;
+    padding: 0 15px;
+    flex: 1; 
 }
 
-.col-width-large { width: 26%; }
-.col-width-medium { width: 23%; }
+.col-width-large { 
+    flex: 1.6; 
+}
+.col-width-medium { 
+    flex: 1.3; 
+}
 
 .footer-col-heading {
-    color: #d49a17 !important; 
-    font-size: 14px;
+    color: #f1b82d !important; 
+    font-size: 15px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .footer-col-paragraph {
-    font-size: 13px;
-    line-height: 1.6;
+    font-size: 13.5px;
+    line-height: 1.7;
     color: #ffffff !important; 
 }
 
 .footer-label-gold {
-    font-size: 13px;
+    font-size: 13.5px;
     font-weight: bold;
-    color: #d49a17 !important;
+    color: #f1b82d !important; 
+    margin-top: 15px;
     margin-bottom: 2px;
+}
+
+.footer-col-item p:nth-of-type(1).footer-label-gold {
+    margin-top: 0px;
 }
 
 .footer-quick-links {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-quick-links li {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .footer-quick-links a {
     color: #ffffff !important; 
     text-decoration: none;
-    font-size: 13px;
+    font-size: 13.5px;
+    transition: color 0.2s ease;
 }
 
 .footer-quick-links a:hover {
-    color: #d49a17 !important;
+    color: #f1b82d !important;
 }
 
 .footer-horizontal-line {
     border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    max-width: 1200px;
-    margin: 40px auto 30px auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    max-width: 1320px;
+    margin: 50px auto 30px auto;
 }
 
 .footer-academic-disclaimer {
     text-align: center;
     font-size: 13px;
-    color: #e3ded6 !important;
-    line-height: 1.7;
-    max-width: 1100px;
+    color: #ffffff !important;
+    line-height: 1.8;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px 40px 40px; 
+    padding: 0 40px 35px 40px; 
 }
 
 .footer-academic-disclaimer strong {
     color: #ffffff !important;
     font-style: italic;
+    font-weight: bold;
 }
 
 .footer-bottom-dark-bar {
-    background-color: #614733; 
-    padding: 22px 20px;
+    background-color: transparent; 
+    padding: 0px 20px 35px 20px;
     text-align: center;
     width: 100%;
 }
 
 .footer-bottom-dark-bar p {
-    font-size: 14px;
-    color: #ffffff !important;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8) !important;
     letter-spacing: 0.5px;
 }
 
-/* ==========================================================================
-   1. GLOBAL RESET & UTILITY
-   ========================================================================== */
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -467,9 +458,7 @@ body {
     height: 0;
 }
 
-/* ==========================================================================
-   2. MAIN HEADER
-   ========================================================================== */
+
 .main-header {
     background-color: #9eb099; 
     text-align: center;
@@ -502,9 +491,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* ==========================================================================
-   3. BAR NAVIGASI
-   ========================================================================== */
 .navbar-container {
     background-color: #83644b; 
     text-align: center;
@@ -568,9 +554,6 @@ body {
     display: block;
 }
 
-/* ==========================================================================
-   4. UTILITY BAR
-   ========================================================================== */
 .utility-bar {
     max-width: 1200px;
     margin: 35px auto 10px auto;
@@ -643,9 +626,6 @@ body {
     margin-left: 2px;
 }
 
-/* ==========================================================================
-   5. KANDUNGAN GRID KAD BUKU PRODUK
-   ========================================================================== */
 .content-container {
     max-width: 1260px; 
     margin: 40px auto 60px auto;
@@ -787,18 +767,15 @@ body {
     background-color: #b38112;
 }
 
-/* ==========================================================================
-   6. KEMAS KINI: GAYA REKA BENTUK POP-UP MODAL (KAEDAH PEMBAYARAN)
-   ========================================================================== */
 .modal-overlay {
-    display: none; /* Disembunyikan secara lalai */
+    display: none; 
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Efek latar belakang gelap kabur */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .modal-content-card {
@@ -906,9 +883,6 @@ body {
     background-color: #b38112;
 }
 
-/* ==========================================================================
-   7. FOOTER
-   ========================================================================== */
 .main-footer {
     background-color: #83644b; 
     padding: 60px 0 0 0; 
@@ -926,12 +900,18 @@ body {
 
 .footer-col-item {
     float: left;
-    width: 17%;
+    width: 16%; 
     padding: 0 10px;
 }
 
-.col-width-large { width: 26%; }
-.col-width-medium { width: 23%; }
+.col-width-large { 
+    width: 25%; 
+}
+
+.col-width-medium { 
+    width: 24%; 
+    word-wrap: break-word; 
+}
 
 .footer-col-heading {
     color: #d49a17 !important; 
@@ -985,7 +965,7 @@ body {
     line-height: 1.7;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 40px 40px 40px; 
+    padding: 0 40px 30px 40px; 
 }
 
 .footer-academic-disclaimer strong {
@@ -998,6 +978,7 @@ body {
     padding: 22px 20px;
     text-align: center;
     width: 100%;
+    clear: both;
 }
 
 .footer-bottom-dark-bar p {
@@ -1006,11 +987,8 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* ==========================================================================
-   REKA BENTUK KOTAK INPUT NOMBOR KAD KREDIT / DEBIT
-   ========================================================================== */
 .card-details-container {
-    display: none; /* Disembunyikan secara lalai, hanya muncul jika kad diklik */
+    display: none; 
     background-color: #fcfbf7;
     border: 1px dashed #83644b;
     border-radius: 8px;
@@ -1034,7 +1012,7 @@ body {
     border-radius: 6px;
     background-color: #ffffff;
     font-size: 14px;
-    font-family: monospace; /* Font monospace supaya susunan angka kad nampak sekata */
+    font-family: monospace; 
     letter-spacing: 1.5px;
     color: #333333;
     outline: none;
@@ -1050,9 +1028,6 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* ==========================================================================
-   GAYA REKA BENTUK UTK BUTANG PAGINATION (1, 2, 3) DI BAWAH PAGE
-   ========================================================================== */
 .pagination-section {
     display: flex;
     justify-content: center;
@@ -1060,7 +1035,7 @@ body {
     margin: 50px 0 20px 0;
     gap: 10px;
     width: 100%;
-    clear: both; /* Mengelakkan ralat kedudukan susunan kad buku */
+    clear: both; 
 }
 
 .page-link {
@@ -1068,7 +1043,7 @@ body {
     padding: 10px 18px;
     font-size: 14px;
     font-weight: bold;
-    color: #83644b; /* Warna coklat tema menu anda */
+    color: #83644b; 
     text-decoration: none;
     background-color: #ffffff;
     border: 2px solid #83644b;
@@ -1077,14 +1052,11 @@ body {
     cursor: pointer;
 }
 
-/* Kesan apabila tetikus lalu (Hover) atas butang */
 .page-link:hover:not(.disabled):not(.active) {
-    background-color: #d49a17; /* Warna emas/kuning butang buy now */
-    border-color: #d49a17;
+    background-color: #d49a17; 
     color: #ffffff;
 }
 
-/* Gaya rupa nombor halaman yang tengah aktif (Nombor 1) */
 .page-link.active {
     background-color: #83644b;
     color: #ffffff;
@@ -1092,7 +1064,6 @@ body {
     cursor: default;
 }
 
-/* Gaya rupa butang yang disekat (Contoh: Previous dekat Page 1) */
 .page-link.disabled {
     color: #cccccc;
     border-color: #e6e3dc;
@@ -1100,9 +1071,6 @@ body {
     cursor: not-allowed;
 }
 
-/* ==========================================================================
-   GAYA REKA BENTUK UTK BUTANG PAGINATION (1, 2, 3) DI BAWAH PAGE
-   ========================================================================== */
 .pagination-section {
     display: flex;
     justify-content: center;
@@ -1110,7 +1078,7 @@ body {
     margin: 50px 0 20px 0;
     gap: 10px;
     width: 100%;
-    clear: both; /* Mengelakkan ralat kedudukan susunan kad buku */
+    clear: both; 
 }
 
 .page-link {
@@ -1118,7 +1086,7 @@ body {
     padding: 10px 18px;
     font-size: 14px;
     font-weight: bold;
-    color: #83644b; /* Warna coklat tema menu anda */
+    color: #83644b; 
     text-decoration: none;
     background-color: #ffffff;
     border: 2px solid #83644b;
@@ -1127,14 +1095,12 @@ body {
     cursor: pointer;
 }
 
-/* Kesan apabila tetikus lalu (Hover) atas butang */
 .page-link:hover:not(.disabled):not(.active) {
-    background-color: #d49a17; /* Warna emas/kuning butang buy now */
+    background-color: #d49a17; 
     border-color: #d49a17;
     color: #ffffff;
 }
 
-/* Gaya rupa nombor halaman yang tengah aktif (Nombor 1) */
 .page-link.active {
     background-color: #83644b;
     color: #ffffff;
@@ -1142,7 +1108,6 @@ body {
     cursor: default;
 }
 
-/* Gaya rupa butang yang disekat (Contoh: Previous dekat Page 1) */
 .page-link.disabled {
     color: #cccccc;
     border-color: #e6e3dc;
