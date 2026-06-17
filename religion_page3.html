@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Religion- Legacy Books</title>
+    <link rel="stylesheet" href="style_religion_page3.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Legacy BookStore" class="site-logo">
+        </div>
+        <h1 class="site-title">Legacy Books</h1>
+        <p class="site-slogan">Preserving Stories, Inspiring Generations</p>
+    </header>
+
+    <nav class="navbar-container">
+        <div class="navbar-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="aboutus.html" class="nav-item">About Us</a>
+            <a href="fiction.html" class="nav-item">Fiction</a>
+            
+            <div class="dropdown">
+                <a href="nonfiction.html" class="nav-item active">Non-Fiction</a>
+                <div class="dropdown-content">
+                    <a href="business.html">Business & Management</a>
+                    <a href="economy.html">Economy</a>
+                    <a href="history.html">History</a>
+					<a href="religion.html">Religion</a>
+					<a href="self health.html">Self Health</a>
+                </div>
+            </div>
+
+            <a href="children.html" class="nav-item">Children's Books</a>
+            <a href="facilities.html" class="nav-item">Facilities</a>
+            <a href="stationery.html" class="nav-item">Stationery</a>
+            <a href="others.html" class="nav-item">Others</a>
+            <a href="our-group.html" class="nav-item">Our Group</a>
+        </div>
+    </nav>
+
+    <div class="utility-bar">
+        <div class="cart-box" onclick="lihatIsiTroli()">
+            <span class="cart-label">Cart 🛒</span>
+            <span id="top-cart-count" class="cart-count-badge">0</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+	
+    <main class="content-container">
+        <h2 class="category-main-title">Religion</h2>
+        
+        <div class="product-cards-grid">
+            
+            <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="religion11.jpg" alt="Jesus in the Quran" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">Jesus in the Quran</h3>
+                </div>
+                <p class="book-author-text">Parrinder, Geoffrey</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9781851689996</p>
+                    <p><span>Publisher:</span> Oneworld</p>
+                    <p><span>Date:</span> July 9, 2013</p>
+                    <p><span>Pages:</span> 187</p>
+                    <p><span>Weight:</span> 181.44 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 62.00</p>
+                <button class="book-cart-btn" onclick="tambahKeTroli('Jesus in the Quran')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="bukaPopupBayar('Jesus in the Quran, '62.00')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="religion12.jpg" alt="Wisdom of the Tao" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">Wisdom of the Teo</h3>
+                </div>
+                <p class="book-author-text">Ming-Dao, Deng</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9781571748379</p>
+                    <p><span>Publisher:</span> Hampton Roads Publishing</p>
+                    <p><span>Date:</span> May 2, 2019</p>
+                    <p><span>Pages:</span> 128</p>
+                    <p><span>Weight:</span> 420 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 79.95</p>
+                <button class="book-cart-btn" onclick="tambahKeTroli('Wisdom of the Teo')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="bukaPopupBayar('Wisdom of the Teo', '79.95')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="religion13.jpg" alt="How to Pray" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">How to Pray</h3>
+                </div>
+                <p class="book-author-text">Lewis, C.S.</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9780008307141</p>
+                    <p><span>Publisher:</span> William Collins</p>
+                    <p><span>Date:</span> January 9, 2020</p>
+                    <p><span>Pages:</span> 156 </p>
+                    <p><span>Weight:</span> 161 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 57.95</p>
+                <button class="book-cart-btn" onclick="tambahKeTroli('How to Pray">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="bukaPopupBayar('How to Pray', '57.95')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="religion14.jpg" alt="Prophet of Peace" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">Prophet of Peace</h3>
+                </div>
+                <p class="book-author-text">Khan, Maulana Wahiduddin</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9780143068174</p>
+                    <p><span>Publisher:</span> Penguin IND</p>
+                    <p><span>Date:</span> March 18, 2021</p>
+                    <p><span>Pages:</span> 188</p>
+                    <p><span>Weight:</span> 420 g </p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 42.00</p>
+                <button class="book-cart-btn" onclick="tambahKeTroli('Prophet of Peace')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="bukaPopupBayar('Prophet of Peace', '42.00')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="religion15.jpg" alt="The Qur'an" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">The Qur'an</h3>
+                </div>
+                <p class="book-author-text">Khalidi, Tarif</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9780140455441</p>
+                    <p><span>Publisher:</span> Penguin UK</p>
+                    <p><span>Date:</span> February 27,2012</p>
+                    <p><span>Pages:</span> 560</p>
+                    <p><span>Weight:</span> 383 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 54.95</p>
+                <button class="book-cart-btn" onclick="tambahKeTroli('The Qur'an')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="bukaPopupBayar('The Qur'an', '54.95')">Buy Now</button>
+            </div>
+            
+           <div class="pagination-section">
+    <a href="religion_page2.html" class="page-link">&laquo; Previous</a>
+    
+    <a href="religion.html" class="page-link num-btn">1</a>
+    <a href="religion_page2.html" class="page-link num-btn">2</a>  
+    <a href="religion_page3.html" class="page-link num-btn active">3</a>
+    
+    <a href="#" class="page-link next-btn disabled" onclick="return false;">Next &raquo;</a>
+</div>
+
+        </div> 
+        <div class="clearfix"></div>
+    </main>
+
+    <div id="payment-modal-box" class="modal-overlay">
+        <div class="modal-content-card">
+            <span class="modal-close-btn" onclick="tutupPopupBayar()">&times;</span>
+            <h3 class="modal-payment-title">Secure Checkout</h3>
+            
+            <div class="modal-product-summary">
+                <p><strong>Item:</strong> <span id="modal-book-name">-</span></p>
+                <p><strong>Total Price:</strong> <span id="modal-book-price" class="modal-price-highlight">RM 0.00</span></p>
+            </div>
+            
+            <h4 class="modal-section-subtitle">Select Payment Method:</h4>
+            <form id="payment-selection-form" onsubmit="prosesBayaran(event)">
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="Online Banking" required onchange="kawalPaparanInputCheckout()">
+                    <span class="option-custom-text">🌐 Online Banking (FPX)</span>
+                </label>
+                
+                <div id="bank-dropdown-container" class="bank-selection-container">
+                    <label for="fpx-bank-select" class="bank-select-label">Select Your Bank:</label>
+                    <select id="fpx-bank-select" class="bank-select-dropdown">
+                        <option value="" disabled selected>-- Choose Bank --</option>
+                        <option value="CIMB Bank">CIMB Bank</option>
+                        <option value="Public Bank">Public Bank</option>
+                        <option value="RHB Bank">RHB Bank</option>
+                        <option value="Maybank">Maybank</option>
+                        <option value="BSN">BSN</option>
+                    </select>
+                </div>
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="Credit/Debit Card" onchange="kawalPaparanInputCheckout()">
+                    <span class="option-custom-text">💳 Credit / Debit Card</span>
+                </label>
+
+                <div id="card-input-container" class="card-details-container">
+                    <label for="card-number-field" class="card-input-label">Enter your card number:</label>
+                    <input type="text" id="card-number-field" class="card-input-box" placeholder="1234 5678 9101 2345" maxlength="19">
+                </div>
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="E-Wallet" onchange="kawalPaparanInputCheckout()">
+                    <span class="option-custom-text">📱 E-Wallet (Touch 'n Go / GrabPay)</span>
+                </label>
+                
+                <button type="submit" class="modal-pay-submit-btn">Proceed to Pay</button>
+            </form>
+        </div>
+    </div>
+
+   <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-column">
+                <h3>LEGACY BOOKS</h3>
+                <p>Preserving Stories, Inspiring Generations. Hub carian buku korporat dan akademik pilihan utama anda.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>HELP & SUPPORT</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>OPERATING HOURS</h3>
+                <p><span>Mon - Fri:</span> 9:00 AM - 6:00 PM</p>
+                <p><span>Sat - Sun:</span> Closed</p>
+                <p><span>Public Holiday:</span> Closed</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>CONTACT US</h3>
+                <p>Email: info@legacybooks.com.my</p>
+                <p>Email: support@legacybooks.com.my</p>
+                <p class="phone-text">Phone: +603-1234 5678</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <li><a href="#">Instagram: @legacybooks</a></li>
+                    <li><a href="#">TikTok: @legacybooks</a></li>
+                    <li><a href="#">Facebook: Legacy Books</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <hr class="footer-divider">
+        
+        <div class="disclaimer-area">
+            <p class="disclaimer-text"><strong>Disclaimer:</strong> This website is NOT the official website of Legacy Books. This website was developed strictly for the purpose of learning XHTML & CSS only for the course IML254 (Introduction to Web Content Development).</p>
+            <p class="tech-specs">Recommended Browser: Google Chrome or Mozilla Firefox | Best Resolution: 1920x1080 pixels</p>
+            <p class="last-update">Last Updated: June 15, 2026</p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Legacy Books. All Rights Reserved.</p>
+        </div>
+    </footer>
+	
+    <script type="text/javascript">
+        var senaraiTroliBuku = [];
+
+        function tambahKeTroli(namaBuku) {
+            senaraiTroliBuku.push(namaBuku);
+            document.getElementById("top-cart-count").innerHTML = senaraiTroliBuku.length;
+            alert("Success! '" + namaBuku + "' has been added to your cart.");
+        }
+
+        function lihatIsiTroli() {
+            if(senaraiTroliBuku.length === 0) {
+                alert("Your cart is currently empty. Start adding some books from the shop!");
+            } else {
+                var ringkasanTeks = "Items currently in your cart:\n\n";
+                for (var i = 0; i < senaraiTroliBuku.length; i++) {
+                    ringkasanTeks += (i + 1) + ". " + senaraiTroliBuku[i] + "\n";
+                }
+                ringkasanTeks += "\nTotal items: " + senaraiTroliBuku.length;
+                alert(ringkasanTeks);
+            }
+        }
+
+        function bukaPopupBayar(namaBuku, hargaBuku) {
+            document.getElementById("modal-book-name").innerHTML = namaBuku;
+            document.getElementById("modal-book-price").innerHTML = "RM " + hargaBuku;
+            document.getElementById("payment-modal-box").style.display = "block";
+            document.getElementById("bank-dropdown-container").style.display = "none";
+            document.getElementById("card-input-container").style.display = "none";
+        }
+
+        function tutupPopupBayar() {
+            document.getElementById("payment-modal-box").style.display = "none";
+            document.getElementById("payment-selection-form").reset();
+            document.getElementById("bank-dropdown-container").style.display = "none";
+            document.getElementById("card-input-container").style.display = "none";
+        }
+
+        function kawalPaparanInputCheckout() {
+            var kaedahDipilih = document.querySelector('input[name="payment_method"]:checked').value;
+            var kotakBank = document.getElementById("bank-dropdown-container");
+            var dropdownBank = document.getElementById("fpx-bank-select");
+            var kotakKad = document.getElementById("card-input-container");
+            var inputKad = document.getElementById("card-number-field");
+            
+            if (kaedahDipilih === "Online Banking") {
+                kotakBank.style.display = "block";
+                dropdownBank.required = true;
+                kotakKad.style.display = "none";
+                inputKad.required = false;
+                inputKad.value = ""; 
+            } else if (kaedahDipilih === "Credit/Debit Card") {
+                kotakKad.style.display = "block";
+                inputKad.required = true;
+                kotakBank.style.display = "none";
+                dropdownBank.required = false;
+                dropdownBank.value = "";
+            } else {
+                kotakBank.style.display = "none";
+                dropdownBank.required = false;
+                dropdownBank.value = "";
+                kotakKad.style.display = "none";
+                inputKad.required = false;
+                inputKad.value = "";
+            }
+        }
+
+        function prosesBayaran(event) {
+            event.preventDefault();
+            var pilihanKaedah = document.querySelector('input[name="payment_method"]:checked').value;
+            var namaBukuDipilih = document.getElementById("modal-book-name").innerHTML;
+            
+            if (pilihanKaedah === "Online Banking") {
+                var bankDipilih = document.getElementById("fpx-bank-select").value;
+                alert("Success! Your transaction for '" + namaBukuDipilih + "' via [Online Banking - " + bankDipilih + "] was successful!");
+            } else if (pilihanKaedah === "Credit/Debit Card") {
+                var noKad = document.getElementById("card-number-field").value;
+                alert("Success! Your transaction for '" + namaBukuDipilih + "' via [Credit/Debit Card: **** " + noKad.slice(-4) + "] was successful!");
+            } else {
+                alert("Success! Your transaction for '" + namaBukuDipilih + "' via [" + pilihanKaedah + "] was successful!");
+            }
+            tutupPopupBayar();
+        }
+    </script>
+</body>
+</html>
