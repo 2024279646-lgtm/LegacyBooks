@@ -1,6 +1,4 @@
-/* ==========================================================================
-   RESET & GLOBAL STYLES
-   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,50 +17,38 @@ body {
     height: 0;
 }
 
-/* ==========================================================================
-   HEADER SECTION (TULISAN KUNING EMAS SEPERTI CONTOH GAMBAR)
-   ========================================================================== */
 .main-header {
     background-color: #9eb099; 
     text-align: center;
     padding: 35px 15px 40px 15px;
 }
 
-.logo-container {
-    margin-bottom: 15px;
-}
-
-.site-logo {
-    max-height: 140px; 
-    width: auto;
-    display: inline-block;
+.logo {
+    width: 180px;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
-.site-logo:hover {
+.logo:hover {
     transform: scale(1.05);
-}
 
 .site-title {
     font-family: 'Times New Roman', Times, Georgia, serif; 
-    color: #d49a17; /* WARNA KUNING EMAS */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Kesan bayang lembut tulisan */
-    font-size: 4.2rem; /* Dibesarkan sedikit mengikut reka bentuk contoh */
+    color: #d49a17; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+    font-size: 4.2rem; 
     font-weight: bold;
     margin-bottom: 12px;
 }
 
 .site-slogan {
-    color: #ffffff; /* Slogan kekal putih bersih */
+    color: #ffffff; 
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4rem;
     letter-spacing: 0.5px;
 }
 
-/* ==========================================================================
-   NAVIGATION BAR & DROPDOWN
-   ========================================================================== */
 .navbar-container {
     background-color: #83644b; 
     text-align: center;
@@ -126,9 +112,6 @@ body {
     display: block;
 }
 
-/* ==========================================================================
-   UTILITY BAR (CARIAN & TROLI)
-   ========================================================================== */
 .utility-bar {
     max-width: 1200px;
     margin: 35px auto 10px auto;
@@ -201,9 +184,6 @@ body {
     margin-left: 2px;
 }
 
-/* ==========================================================================
-   PRODUCT GRID & CARDS
-   ========================================================================== */
 .content-container {
     max-width: 1260px; 
     margin: 40px auto 60px auto;
@@ -345,9 +325,6 @@ body {
     background-color: #b38112;
 }
 
-/* ==========================================================================
-   PAGINATION SECTION
-   ========================================================================== */
 .pagination-section {
     display: flex;
     justify-content: center;
@@ -392,9 +369,6 @@ body {
     cursor: not-allowed;
 }
 
-/* ==========================================================================
-   FOOTER SECTION
-   ========================================================================== */
 .main-footer {
     background-color: #83644b; 
     padding: 60px 0 0 0; 
