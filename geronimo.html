@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diary of A Wimpy Kid</title>
-    <link rel="stylesheet" href="diary.css">
+    <title>Geronimo and Thea Stilton Reading Series - Legacy Books</title>
+    <link rel="stylesheet" href="geronimo.css">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
         <div class="navbar-links">
             <a href="index.html" class="nav-item">Home</a>
             <a href="about.html" class="nav-item">About Us</a>
-            <a href="children.html" class="nav-item">children</a>
+            <a href="children.html" class="nav-item">Children's Books</a>
             
             <div class="dropdown">
                 <a href="children.html" class="nav-item active">Children's Books</a>
@@ -41,7 +41,14 @@
         </div>
     </nav>
 
-           <div class="cart-box" onclick="viewCart()">
+    <div class="utility-bar">
+        <div class="search-box-wrapper">
+            <form action="search.html" method="GET">
+                <input type="text" name="query" placeholder="Search books..." class="search-input">
+                <input type="submit" value="Search" class="search-submit-btn">
+            </form>
+        </div>
+        <div class="cart-box" onclick="lihatIsiTroli()">
             <span class="cart-label">Cart 🛒</span>
             <span id="top-cart-count" class="cart-count-badge">0</span>
         </div>
@@ -50,122 +57,127 @@
 
 
     <main class="content-container">
-        <h2 class="category-main-title">Diary of A Wimpy Kid</h2>
+        <h2 class="category-main-title">Geronimo and Thea Stilton Reading Series</h2>
         
         <div class="product-cards-grid">
             
             <div class="book-card-item">
                 <div class="book-img-frame">
-                    <img src="diary1.jpg" alt="Diary of a Wimpy Kid #19: Hot Mess (Paperback)" class="book-cover-img">
+                    <img src="geronimo1.jpg" alt="Thea Stilton Classic Tales: Goddess of Olympus" class="book-cover-img">
                 </div>
                 <div class="book-title-container">
-                    <h3 class="book-title-text">Diary of a Wimpy Kid #19: Hot Mess (Paperback)</h3>
+                    <h3 class="book-title-text">Thea Stilton Classic Tales: Goddess of Olympus</h3>
                 </div>
-                <p class="book-author-text">Kinney, Jeff</p>
+                <p class="book-author-text">Stilton, Thea</p>
                 <div class="book-spec-box">
-                    <p><span>ISBN:</span> 9780241618172</p>
-                    <p><span>Publisher:</span> Puffin UK</p>
-                    <p><span>Date:</span> September 11, 2025</p>
-                    <p><span>Pages:</span> 240</p>
-                    <p><span>Weight:</span> 200g</p>
+                    <p><span>ISBN:</span> 9789813510050</p>
+                    <p><span>Publisher:</span> : Scholastic US</p>
+                    <p><span>Date:</span> May 1, 2026</p>
+                    <p><span>Pages:</span> 224</p>
+                    <p><span>Weight:</span> 420 g</p>
                 </div>
                 <p class="book-stock-status">In Stock</p>
-                <p class="book-price-text">RM 39.95</p>
-                <button class="book-cart-btn" onclick="addToCart('Diary of a Wimpy Kid #19: Hot Mess (Paperback)')">Add to Cart</button>
-                <button class="book-buy-now-btn" onclick="openPaymentModal('Diary of a Wimpy Kid #19: Hot Mess (Paperback)', '39.95')">Buy Now</button>
+                <p class="book-price-text">RM 36.90</p>
+                <button class="book-cart-btn" onclick="addToCart('Thea Stilton Classic Tales: Goddess of Olympus')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="OpenPaymentModal('Thea Stilton Classic Tales: Goddess of Olympus', '36.90')">Buy Now</button>
             </div>
 
+           
             <div class="book-card-item">
                 <div class="book-img-frame">
-                    <img src="diary2.jpg" alt="Diary of a Wimpy Kid #18: No Brainer (Paperback)" class="book-cover-img">
+                    <img src="geronimo2.jpg" alt="Thea Stilton #39: The Blue Island Thief" class="book-cover-img">
                 </div>
                 <div class="book-title-container">
-                    <h3 class="book-title-text">Diary of a Wimpy Kid #18: No Brainer (Paperback)</h3>
+                    <h3 class="book-title-text">Thea Stilton #39: The Blue Island Thief</h3>
                 </div>
-                <p class="book-author-text">Kinney, Jeff</p>
+                <p class="book-author-text">Stilton, Thea</p>
                 <div class="book-spec-box">
-                    <p><span>ISBN:</span> 9780241583159</p>
-                    <p><span>Publisher:</span> Puffin</p>
-                    <p><span>Date:</span> January 2, 2025</p>
-                    <p><span>Pages:</span> 240</p>
-                    <p><span>Weight:</span> 174g</p>
+                    <p><span>ISBN:</span>  9798225027841</p>
+                    <p><span>Publisher:</span> : Scholastic US</p>
+                    <p><span>Date:</span> June 2, 2026</p>
+                    <p><span>Pages:</span> 224</p>
+                    <p><span>Weight:</span> 176 g</p>
                 </div>
                 <p class="book-stock-status">In Stock</p>
-                <p class="book-price-text">RM 39.95</p>
-                <button class="book-cart-btn" onclick="addToCart('Diary of a Wimpy Kid #18: No Brainer (Paperback)')">Add to Cart</button>
-                <button class="book-buy-now-btn" onclick="openPaymentModal('Diary of a Wimpy Kid #18: No Brainer (Paperback)', '39.95')">Buy Now</button>
+                <p class="book-price-text">RM 36.90</p>
+                <button class="book-cart-btn" onclick="addToCart('Thea Stilton #39: The Blue Island Thief')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="OpenPaymentModal('Thea Stilton #39: The Blue Island Thief', '36.90')">Buy Now</button>
             </div>
 
+
+               
             <div class="book-card-item">
                 <div class="book-img-frame">
-                    <img src="diary3.jpg" alt="Diary of a Wimpy Kid #15: The Deep End" class="book-cover-img">
+                    <img src="geronimo3.jpg" alt="Geronimo Stilton Reporter #21: Rules of the Game" class="book-cover-img">
                 </div>
                 <div class="book-title-container">
-                    <h3 class="book-title-text">Diary of a Wimpy Kid #15: The Deep End</h3>
+                    <h3 class="book-title-text">Geronimo Stilton Reporter #21: Rules of the Game</h3>
                 </div>
-                <p class="book-author-text">Kinney, Jeff</p>
+                <p class="book-author-text">Stilton, Gernimo</p>
                 <div class="book-spec-box">
-                    <p><span>ISBN:</span> 9780241396957</p>
-                    <p><span>Publisher:</span> Puffin UK</p>
-                    <p><span>Date:</span> -</p>
-                    <p><span>Pages:</span> -</p>
-                    <p><span>Weight:</span> 420g</p>
+                    <p><span>ISBN:</span>  9781545823705</p>
+                    <p><span>Publisher:</span> : - </p>
+                    <p><span>Date:</span> - </p>
+                    <p><span>Pages:</span> - </p>
+                    <p><span>Weight:</span> - </p>
                 </div>
                 <p class="book-stock-status">In Stock</p>
-                <p class="book-price-text">RM 39.95</p>
-                <button class="book-cart-btn" onclick="addToCart('Diary of a Wimpy Kid #15: The Deep End')">Add to Cart</button>
-                <button class="book-buy-now-btn" onclick="openPaymentModal('Diary of a Wimpy Kid #15: The Deep End', '39.95')">Buy Now</button>
+                <p class="book-price-text">RM 55.90</p>
+                <button class="book-cart-btn" onclick="addToCart('Geronimo Stilton Reporter #21: Rules of the Game')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="OpenPaymentModal('Geronimo Stilton Reporter #21: Rules of the Game', '55.90')">Buy Now</button>
             </div>
       
-            <div class="book-card-item">
-                <div class="book-img-frame">
-                    <img src="diary4.jpg" alt="Diary of a Wimpy Kid #16: Big Shot" class="book-cover-img">
-                </div>
-                <div class="book-title-container">
-                    <h3 class="book-title-text">Diary of a Wimpy Kid #16: Big Shot</h3>
-                </div>
-                <p class="book-author-text">Kinney, Jeff</p>
-                <div class="book-spec-box">
-                    <p><span>ISBN:</span> 9780241396988</p>
-                    <p><span>Publisher:</span> Puffin</p>
-                    <p><span>Date:</span> January 19, 2023</p>
-                    <p><span>Pages:</span> 240</p>
-                    <p><span>Weight:</span> 174g</p>
-                </div>
-                <p class="book-stock-status">In Stock</p>
-                <p class="book-price-text">RM 39.95</p>
-                <button class="book-cart-btn" onclick="addToCart('Diary of a Wimpy Kid #16: Big Shot')">Add to Cart</button>
-                <button class="book-buy-now-btn" onclick="openPaymentModal('Diary of a Wimpy Kid #16: Big Shot', '39.95')">Buy Now</button>
-            </div>
 
             <div class="book-card-item">
                 <div class="book-img-frame">
-                    <img src="diary5.jpg" alt="Diary of a Wimpy Kid #14: Wrecking Ball" class="book-cover-img">
+                    <img src="geronimo4.jpg" alt="Geronimo Stilton #85: The Legend of Chocolate Hills" class="book-cover-img">
                 </div>
                 <div class="book-title-container">
-                    <h3 class="book-title-text">Diary of a Wimpy Kid #14: Wrecking Ball</h3>
+                    <h3 class="book-title-text">Geronimo Stilton #85: The Legend of Chocolate Hills</h3>
                 </div>
-                <p class="book-author-text">Kinney, Jeff</p>
+                <p class="book-author-text">Stilton, Geronimo</p>
                 <div class="book-spec-box">
-                    <p><span>ISBN:</span> 9780241396926</p>
-                    <p><span>Publisher:</span> Puffin</p>
-                    <p><span>Date:</span> -</p>
-                    <p><span>Pages:</span> 240</p>
-                    <p><span>Weight:</span> 164g</p>
+                    <p><span>ISBN:</span>   9781545820940</p>
+                    <p><span>Publisher:</span> : - </p>
+                    <p><span>Date:</span> - </p>
+                    <p><span>Pages:</span> - </p>
+                    <p><span>Weight:</span> - </p>
                 </div>
                 <p class="book-stock-status">In Stock</p>
-                <p class="book-price-text">RM 39.95</p>
-                <button class="book-cart-btn" onclick="addToCart('Diary of a Wimpy Kid #14: Wrecking Ball')">Add to Cart</button>
-                <button class="book-buy-now-btn" onclick="openPaymentModal('Diary of a Wimpy Kid #14: Wrecking Ball', '39.95')">Buy Now</button>
+                <p class="book-price-text">RM 55.90</p>
+                <button class="book-cart-btn" onclick="addToCart('Geronimo Stilton #85: The Legend of Chocolate Hills')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="OpenPaymentModal('Geronimo Stilton #85: The Legend of Chocolate Hills', '55.90')">Buy Now</button>
+            </div>
+
+
+                <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="geronimo5.jpg" alt="Geronimo Stilton Reporter #20: Starring Geronimo" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">Geronimo Stilton Reporter #20: Starring Geronimo</h3>
+                </div>
+                <p class="book-author-text">Stilton, Geronimo</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span>    9781545820940</p>
+                    <p><span>Publisher:</span> - </p>
+                    <p><span>Date:</span> - </p>
+                    <p><span>Pages:</span> - </p>
+                    <p><span>Weight:</span> - </p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 55.90</p>
+                <button class="book-cart-btn" onclick="addToCart('Geronimo Stilton Reporter #20: Starring Geronimo')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="OpenPaymentModal('Geronimo Stilton Reporter #20: Starring Geronimo', '55.90')">Buy Now</button>
             </div>
 
             
             <div class="pagination-section">
                 <span class="page-link disabled">&laquo; Previous</span>
-                <a href="diary.html" class="page-link num-btn active">1</a>
-                <a href="diary_page2.html" class="page-link num-btn">2</a>
-                <a href="diary_page3.html" class="page-link num-btn">3</a>
-                <a href="diary_page2.html" class="page-link next-btn">Next &raquo;</a>
+                <a href="geronimo.html" class="page-link num-btn active">1</a>
+                <a href="geronimo_page2.html" class="page-link num-btn">2</a>
+                <a href="geronimo_page3.html" class="page-link num-btn">3</a>
+                <a href="geronimo_page2.html" class="page-link next-btn">Next &raquo;</a>
             </div>
 
         </div> 
@@ -186,7 +198,7 @@
             <form id="payment-selection-form" onsubmit="processPayment(event)">
                 
                 <label class="payment-option-label">
-                    <input type="radio" name="payment_method" value="Online Banking" required onchange="toggleCheckoutInputs()">
+                    <input type="radio" name="payment_method" value="Online Banking" required onchange="toggleCheckoutInput()">
                     <span class="option-custom-text">🌐 Online Banking (FPX)</span>
                 </label>
                 
@@ -213,7 +225,7 @@
                 </div>
                 
                 <label class="payment-option-label">
-                    <input type="radio" name="payment_method" value="E-Wallet" onchange="toggleCheckoutInputs()">
+                    <input type="radio" name="payment_method" value="E-Wallet" onchange=""toggleCheckoutInputs()">
                     <span class="option-custom-text">📱 E-Wallet (Touch 'n Go / GrabPay)</span>
                 </label>
                 
@@ -279,7 +291,7 @@
     </footer>
 
     <script type="text/javascript">
-        var cartList = [];
+        var  cartList= [];
 
         function addToCart(bookName) {
             cartList.push(bookName); 
@@ -287,8 +299,8 @@
             alert("Success! '" + bookName  + "' has been added to your cart.");
         }
 
-        function viewCart() {
-            if(cartList.length === 0) {
+       function viewCart() {
+            if(cartList.length=== 0) {
                 alert("Your cart is currently empty. Start adding some books from the shop!");
             } else {
                 var summaryText = "Items currently in your cart:\n\n";
@@ -296,11 +308,11 @@
                    summaryText += (i + 1) + ". " +  cartList[i] + "\n";
                 }
                 summaryText += "\nTotal items: " + cartList.length;
-                alert(summaryText);
+                alert(ringkasanTeks);
             }
         }
 
-        function openPaymentModal(bookName, bookPrice) {
+       function openPaymentModal(bookName, bookPrice) {
             document.getElementById("modal-book-name").innerHTML = bookName;
             document.getElementById("modal-book-price").innerHTML = "RM " + bookPrice;
             document.getElementById("payment-modal-box").style.display = "block";
