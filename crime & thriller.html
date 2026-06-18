@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime & Thriller - Legacy Books</title>
+    <link rel="stylesheet" href="style_crime & thriller.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Legacy BookStore" class="site-logo">
+        </div>
+        <h1 class="site-title">Legacy Books</h1>
+        <p class="site-slogan">Preserving Stories, Inspiring Generations</p>
+    </header>
+
+    <nav class="navbar-container">
+        <div class="navbar-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About Us</a>
+            <div class="dropdown">
+                <a href="fiction.html" class="nav-item active">Fiction</a>
+                <div class="dropdown-content">
+                    <a href="horror & paranormal.html">Horror & Paranormal</a>
+                    <a href="crime & thriller.html">Crime & Thriller</a>
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="romance.html">Romance</a>
+                    <a href="family & friendship.html">Family & Friendship</a>
+                </div>
+            </div>
+            <a href="nonfiction.html" class="nav-item">Non-Fiction</a>
+            <a href="children.html" class="nav-item">Children's Books</a>
+            <a href="facilities.html" class="nav-item">Facilities</a>
+            <a href="stationery.html" class="nav-item">Stationery</a>
+            <a href="others.html" class="nav-item">Others</a>
+            <a href="our-group.html" class="nav-item">Our Group</a>
+        </div>
+    </nav>
+
+    <div class="utility-bar">
+        <div class="cart-box" onclick="viewCart()">
+            <span class="cart-label">Cart 🛒</span>
+            <span id="top-cart-count" class="cart-count-badge">0</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <main class="content-container">
+        <h2 class="category-main-title">CRIME & THRILLER</h2>
+        
+        <div class="product-cards-grid">
+            <div class="book-card-item">
+                <div class="book-img-frame"><img src="crimebook4.jpg.jpg" alt="The Thursday Murder Club #05: The Impossible Fortune" class="book-cover-img"></div>
+                <div class="book-title-container"><h3 class="book-title-text">The Thursday Murder Club #05: The Impossible Fortune</h3></div>
+                <p class="book-author-text">Osman, Richard</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9781405975735</p>
+                    <p><span>Publisher:</span>Penguin</p>
+                    <p><span>Date:</span> Sept 2025</p>
+                    <p><span>Pages:</span> 448</p>
+                    <p><span>Weight:</span> 520 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 64.95</p>
+                <button class="book-cart-btn" onclick="addToCart('The Thursday Murder Club #05: The Impossible Fortune')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('The Thursday Murder Club #05: The Impossible Fortune', '64.95')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame"><img src="crimebook5.jpg.jpg" alt="House of Flies" class="book-cover-img"></div>
+                <div class="book-title-container"><h3 class="book-title-text">House of Flies</h3></div>
+                <p class="book-author-text">Masterton, Graham</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9781837931132</p>
+                    <p><span>Publisher:</span> Head of Zeus</p>
+                    <p><span>Date:</span> May 7 , 2026</p>
+                    <p><span>Pages:</span> 320</p>
+                    <p><span>Weight:</span> 454 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 79.90</p>
+                <button class="book-cart-btn" onclick="addToCart('House of Flies')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('House of Flies', '79.90')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame"><img src="crimebook3.jpg.jpg" alt="The Dead Husband Cookbook (UK edition)" class="book-cover-img"></div>
+                <div class="book-title-container"><h3 class="book-title-text">The Dead Husband Cookbook (UK edition)</h3></div>
+                <p class="book-author-text">Valentine, Danielle</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9781800819191</p>
+                    <p><span>Publisher:</span> Viper</p>
+                    <p><span>Date:</span> April 9, 2026</p>
+                    <p><span>Pages:</span> 384</p>
+                    <p><span>Weight:</span> 260g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 69.90</p>
+                <button class="book-cart-btn" onclick="addToCart('The Dead Husband Cookbook (UK edition)')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('The Dead Husband Cookbook (UK edition)', '69.90')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame"><img src="crimebook2.jpg.jpg" alt="The Divorce" class="book-cover-img"></div>
+                <div class="book-title-container"><h3 class="book-title-text">The Divorce</h3></div>
+                <p class="book-author-text">McFadden, Freida</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9781464249631</p>
+                    <p><span>Publisher:</span> Poisoned Pen Press</p>
+                    <p><span>Date:</span>May 26, 2026</p>
+                    <p><span>Pages:</span> 368</p>
+                    <p><span>Weight:</span> 454 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 64.95</p>
+                <button class="book-cart-btn" onclick="addToCart('The Divorce')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('The Divorce', '64.94')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame"><img src="crimebook.jpg.jpg" alt="Not Quite Dead Yet (US edition)" class="book-cover-img"></div>
+                <div class="book-title-container"><h3 class="book-title-text">Not Quite Dead Yet (US edition)</h3></div>
+                <p class="book-author-text">Jackson, Holly</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9780593977071</p>
+                    <p><span>Publisher:</span> Bantam US</p>
+                    <p><span>Date:</span> May 5, 2026</p>
+                    <p><span>Pages:</span> 400</p>
+                    <p><span>Weight:</span> 358 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 74.95</p>
+                <button class="book-cart-btn" onclick="addToCart('Not Quite Dead Yet (US edition)')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('Not Quite Dead Yet (US edition)', '74.95')">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="pagination-section">
+            <span class="page-link disabled">&laquo; Previous</span>
+            <a href="crime & thriller.html" class="page-link num-btn active">1</a>
+            <a href="crime_page2.html" class="page-link num-btn">2</a>
+            <a href="crime_page3.html" class="page-link num-btn">3</a>
+            <a href="crime_page2.html" class="page-link next-btn">Next &raquo;</a>
+        </div>
+    </main>
+
+    </div> 
+        <div class="clearfix"></div>
+    </main>
+
+    <div id="payment-modal-box" class="modal-overlay">
+        <div class="modal-content-card">
+            <span class="modal-close-btn" onclick="closePaymentModal()">&times;</span>
+            <h3 class="modal-payment-title">Secure Checkout</h3>
+            
+            <div class="modal-product-summary">
+                <p><strong>Item:</strong> <span id="modal-book-name">-</span></p>
+                <p><strong>Total Price:</strong> <span id="modal-book-price" class="modal-price-highlight">RM 0.00</span></p>
+            </div>
+            
+            <h4 class="modal-section-subtitle">Select Payment Method:</h4>
+            <form id="payment-selection-form" onsubmit="processPayment(event)">
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="Online Banking" required onchange="toggleCheckoutInputs()">
+                    <span class="option-custom-text">🌐 Online Banking (FPX)</span>
+                </label>
+                
+                <div id="bank-dropdown-container" class="card-details-container" style="display:none; border:1px solid #cccccc; background:#ffffff; margin-bottom:10px; padding:10px;">
+                    <label for="fpx-bank-select" class="card-input-label" style="display:inline-block; margin-right:10px;">Select Your Bank:</label>
+                    <select id="fpx-bank-select" class="card-input-box" style="width:auto; display:inline-block; letter-spacing:normal;">
+                        <option value="" disabled selected>-- Choose Bank --</option>
+                        <option value="CIMB Bank">CIMB Bank</option>
+                        <option value="Public Bank">Public Bank</option>
+                        <option value="RHB Bank">RHB Bank</option>
+                        <option value="Maybank">Maybank</option>
+                        <option value="BSN">BSN</option>
+                    </select>
+                </div>
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="Credit/Debit Card" onchange="toggleCheckoutInputs()">
+                    <span class="option-custom-text">💳 Credit / Debit Card</span>
+                </label>
+
+                <div id="card-input-container" class="card-details-container">
+                    <label for="card-number-field" class="card-input-label">Enter your card number:</label>
+                    <input type="text" id="card-number-field" class="card-input-box" placeholder="1234 5678 9101 2345" maxlength="19">
+                </div>
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="E-Wallet" onchange="toggleCheckoutInputs()">
+                    <span class="option-custom-text">📱 E-Wallet (Touch 'n Go / GrabPay)</span>
+                </label>
+                
+                <button type="submit" class="modal-pay-submit-btn">Proceed to Pay</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>LEGACY BOOKS</h3>
+                <p>Preserving Stories, Inspiring Generations. Your search hub for corporate and academic books.</p>
+            </div>
+            <div class="footer-column">
+                <h3>HELP & SUPPORT</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>OPERATING HOURS</h3>
+                <p><span>Mon - Fri:</span> 9:00 AM - 6:00 PM</p>
+                <p><span>Sat - Sun:</span> Closed</p>
+                <p><span>Public Holiday:</span> Closed</p>
+            </div>
+            <div class="footer-column">
+                <h3>CONTACT US</h3>
+                <p>Email: info@legacybooks.com.my</p>
+                <p>Email: support@legacybooks.com.my</p>
+                <p class="phone-text">Phone: +603-1234 5678</p>
+            </div>
+            <div class="footer-column">
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <li><a href="#">Instagram: @legacybooks</a></li>
+                    <li><a href="#">TikTok: @legacybooks</a></li>
+                    <li><a href="#">Facebook: Legacy Books</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <hr class="footer-divider">
+        <div class="disclaimer-area">
+            <p class="disclaimer-text"><strong>Disclaimer:</strong> This website is NOT the official website of Legacy Books. This website was developed strictly for the purpose of learning XHTML & CSS only for the course IML254 (Introduction to Web Content Development).</p>
+            <p class="tech-specs">Recommended Browser: Google Chrome or Mozilla Firefox | Best Resolution: 1920x1080 pixels</p>
+            <p class="last-update">Last Updated: June 15, 2026</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Legacy Books. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        console.log("script loaded")
+        var cartList = [];
+
+        function addToCart(bookName) {
+            cartList.push(bookName); 
+            document.getElementById("top-cart-count").innerHTML = cartList.length;
+            alert("Success! '" + bookName + "' has been added to your cart.");
+        }
+
+        function viewCart() {
+            if(cartList.length === 0) {
+                alert("Your cart is currently empty. Start adding some books from the shop!");
+            } else {
+                var summaryText = "Items currently in your cart:\n\n";
+                for (var i = 0; i < cartList.length; i++) {
+                    summaryText += (i + 1) + ". " + cartList[i] + "\n";
+                }
+                summaryText += "\nTotal items: " + cartList.length;
+                alert(summaryText);
+            }
+        }
+
+        function openPaymentModal(bookName, bookPrice) {
+            document.getElementById("modal-book-name").innerHTML = bookName;
+            document.getElementById("modal-book-price").innerHTML = "RM " + bookPrice;
+            document.getElementById("payment-modal-box").style.display = "block";
+            
+            document.getElementById("bank-dropdown-container").style.display = "none";
+            document.getElementById("card-input-container").style.display = "none";
+        }
+
+        function closePaymentModal() {
+            document.getElementById("payment-modal-box").style.display = "none";
+            document.getElementById("payment-selection-form").reset();
+            document.getElementById("bank-dropdown-container").style.display = "none";
+            document.getElementById("card-input-container").style.display = "none";
+        }
+
+        function toggleCheckoutInputs() {
+            var selectedMethod = document.querySelector('input[name="payment_method"]:checked').value;
+            
+            var bankBox = document.getElementById("bank-dropdown-container");
+            var bankDropdown = document.getElementById("fpx-bank-select");
+            
+            var cardBox = document.getElementById("card-input-container");
+            var cardInput = document.getElementById("card-number-field");
+            
+            if (selectedMethod === "Online Banking") {
+                bankBox.style.display = "block";
+                bankDropdown.required = true;
+                
+                cardBox.style.display = "none";
+                cardInput.required = false;
+                cardInput.value = ""; 
+            } 
+            else if (selectedMethod === "Credit/Debit Card") {
+                cardBox.style.display = "block";
+                cardInput.required = true;
+                
+                bankBox.style.display = "none";
+                bankDropdown.required = false;
+                bankDropdown.value = "";
+            } 
+            else {
+                bankBox.style.display = "none";
+                bankDropdown.required = false;
+                bankDropdown.value = "";
+                
+                cardBox.style.display = "none";
+                cardInput.required = false;
+                cardInput.value = "";
+            }
+        }
+
+        function processPayment(event) {
+            event.preventDefault();
+            var selectedMethod = document.querySelector('input[name="payment_method"]:checked').value;
+            var bookName = document.getElementById("modal-book-name").innerHTML;
+            
+            if (selectedMethod === "Online Banking") {
+                var selectedBank = document.getElementById("fpx-bank-select").value;
+                alert("Success! Your transaction for '" + bookName + "' via [Online Banking - " + selectedBank + "] was successful!");
+            } else if (selectedMethod === "Credit/Debit Card") {
+                var cardNum = document.getElementById("card-number-field").value;
+                alert("Success! Your transaction for '" + bookName + "' via [Credit/Debit Card: **** " + cardNum.slice(-4) + "] was successful!");
+            } else {
+                alert("Success! Your transaction for '" + bookName + "' via [" + selectedMethod + "] was successful!");
+            }
+            closePaymentModal();
+        }
+    </script>
+</body>
+</html>
