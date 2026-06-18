@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Health - Legacy Books</title>
+    <link rel="stylesheet" href="style_selfhealth_page.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Legacy BookStore" class="site-logo">
+        </div>
+        <h1 class="site-title">Legacy Books</h1>
+        <p class="site-slogan">Preserving Stories, Inspiring Generations</p>
+    </header>
+
+    <nav class="navbar-container">
+        <div class="navbar-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About Us</a>
+            <a href="fiction.html" class="nav-item">Fiction</a>
+            
+            <div class="dropdown">
+                <a href="nonfiction.html" class="nav-item active">Non-Fiction</a>
+                <div class="dropdown-content">
+                    <a href="business.html">Business & Management</a>
+                    <a href="biography.html">Economy</a>
+					<a href="biography.html">History</a>
+					<a href="biography.html">Religion</a>
+                    <a href="history.html">Self Health</a>
+                </div>
+            </div>
+
+            <a href="children.html" class="nav-item">Children's Books</a>
+            <a href="facilities.html" class="nav-item">Facilities</a>
+            <a href="stationery.html" class="nav-item">Stationery</a>
+            <a href="others.html" class="nav-item">Others</a>
+            <a href="our-group.html" class="nav-item">Our Group</a>
+        </div>
+    </nav>
+
+     <div class="utility-bar">
+        <div class="cart-box" onclick="lihatIsiTroli()">
+            <span class="cart-label">Cart 🛒</span>
+            <span id="top-cart-count" class="cart-count-badge">0</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <main class="content-container">
+        <h2 class="category-main-title">Self Health</h2>
+        
+        <div class="product-cards-grid">
+            
+            <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="selfhealth6.jpg" alt="Blink" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">Blink</h3>
+                </div>
+                <p class="book-author-text">Gladwell, Malcolm</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9780141022048</p>
+                    <p><span>Publisher:</span> Penguin UK</p>
+                    <p><span>Date:</span> January 2, 2006</p>
+                    <p><span>Pages:</span> 304</p>
+                    <p><span>Weight:</span> 1760 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 45.00</p>
+                <button class="book-cart-btn" onclick="tambahKeTroli('Blink')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="bukaPopupBayar('Blink', '45.00')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="selfhealth7.jpg" alt="Burn Out: From Fatgue of Fulfilment" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">Burn Out: From Fatgue of Fulfilment</h3>
+                </div>
+                <p class="book-author-text">Mizi Wahid</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9789819403899</p>
+                    <p><span>Publisher:</span> Crescent News/p>
+                    <p><span>Date:</span> August 30, 2024</p>
+                    <p><span>Pages:</span> 170</p>
+                    <p><span>Weight:</span> 420 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 39.00</p>
+                <button class="book-cart-btn" onclick="tambahKeTroli('Burn Out: From Fatgue of Fulfilment')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="bukaPopupBayar('Burn Out: From Fatgue of Fulfilment', '39.00')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="selfhealth8.jpg" alt="Kaizen" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">Kaizen</h3>
+                </div>
+                <p class="book-author-text">Harvey, Shah</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9781529005356</p>
+                    <p><span>Publisher:</span> Pan Macmillan</p>
+                    <p><span>Date:</span> September 24, 2019</p>
+                    <p><span>Pages:</span> 378</p>
+                    <p><span>Weight:</span> 420 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 79.90</p>
+                <button class="book-cart-btn" onclick="tambahKeTroli('Kaizen')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="bukaPopupBayar('Kaizen', '79.90')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="selfhealth9.jpg" alt="Happiness in a Nutshell" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">Happiness in a Nutshell</h3>
+                </div>
+                <p class="book-author-text">Matthews, Andrew</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9780957757264</p>
+                    <p><span>Publisher:</span> Seashell Books</p>
+                    <p><span>Date:</span> January 1, 2020</p>
+                    <p><span>Pages:</span> 109</p>
+                    <p><span>Weight:</span> 100 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 21.50</p>
+                <button class="book-cart-btn" onclick="tambahKeTroli('Happiness in a Nutshell')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="bukaPopupBayar('Happiness in a Nutshell', '21.50')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame">
+                    <img src="selfhealth10.jpg" alt="Teruntuk Langit Yang Bercanda" class="book-cover-img">
+                </div>
+                <div class="book-title-container">
+                    <h3 class="book-title-text">Terntuk Langit Yang Bercanda</h3>
+                </div>
+                <p class="book-author-text">Jiwa</p>
+                <div class="book-spec-box">
+                    <p><span>ISBN:</span> 9789671692011</p>
+                    <p><span>Publisher:</span> Nukilan Biruni</p>
+                    <p><span>Date:</span> January 1, 2020</p>
+                    <p><span>Pages:</span> 192</p>
+                    <p><span>Weight:</span> 250 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 28.00</p>
+                <button class="book-cart-btn" onclick="tambahKeTroli('Teruntuk Langit Yang Bercanda')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="bukaPopupBayar('Teruntuk Langit Yang Bercanda','28.00')">Buy Now</button>
+            </div>
+            
+            <div class="pagination-section">
+                <a href="selfhealth.html" class="page-link">&laquo; Previous</a>
+                
+                <a href="selfhealth.html" class="page-link num-btn">1</a>
+                <a href="selfhealth_page2.html" class="page-link num-btn active">2</a>
+                <a href="selfhealth_page3.html" class="page-link num-btn">3</a>
+                
+                <a href="selfhealth_page3.html" class="page-link next-btn">Next &raquo;</a>
+            </div>
+
+        </div> 
+        <div class="clearfix"></div>
+    </main>
+
+    <div id="payment-modal-box" class="modal-overlay">
+        <div class="modal-content-card">
+            <span class="modal-close-btn" onclick="tutupPopupBayar()">&times;</span>
+            <h3 class="modal-payment-title">Secure Checkout</h3>
+            
+            <div class="modal-product-summary">
+                <p><strong>Item:</strong> <span id="modal-book-name">-</span></p>
+                <p><strong>Total Price:</strong> <span id="modal-book-price" class="modal-price-highlight">RM 0.00</span></p>
+            </div>
+            
+            <h4 class="modal-section-subtitle">Select Payment Method:</h4>
+            <form id="payment-selection-form" onsubmit="prosesBayaran(event)">
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="Online Banking" required onchange="kawalPaparanInputCheckout()">
+                    <span class="option-custom-text">🌐 Online Banking (FPX)</span>
+                </label>
+                
+                <div id="bank-dropdown-container" class="bank-selection-container">
+                    <label for="fpx-bank-select" class="bank-select-label">Select Your Bank:</label>
+                    <select id="fpx-bank-select" class="bank-select-dropdown">
+                        <option value="" disabled selected>-- Choose Bank --</option>
+                        <option value="CIMB Bank">CIMB Bank</option>
+                        <option value="Public Bank">Public Bank</option>
+                        <option value="RHB Bank">RHB Bank</option>
+                        <option value="Maybank">Maybank</option>
+                        <option value="BSN">BSN</option>
+                    </select>
+                </div>
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="Credit/Debit Card" onchange="kawalPaparanInputCheckout()">
+                    <span class="option-custom-text">💳 Credit / Debit Card</span>
+                </label>
+
+                <div id="card-input-container" class="card-details-container">
+                    <label for="card-number-field" class="card-input-label">Enter your card number:</label>
+                    <input type="text" id="card-number-field" class="card-input-box" placeholder="1234 5678 9101 2345" maxlength="19">
+                </div>
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="E-Wallet" onchange="kawalPaparanInputCheckout()">
+                    <span class="option-custom-text">📱 E-Wallet (Touch 'n Go / GrabPay)</span>
+                </label>
+                
+                <button type="submit" class="modal-pay-submit-btn">Proceed to Pay</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-columns-wrapper">
+            <div class="footer-col-item col-width-large">
+                <h4 class="footer-col-heading">LEGACY BOOKS</h4>
+                <p class="footer-col-paragraph">Preserving Stories, Inspiring Generations. Hub carian buku korporat dan akademik pilihan utama anda.</p>
+            </div>
+            
+            <div class="footer-col-item">
+                <h4 class="footer-col-heading">HELP & SUPPORT</h4>
+                <ul class="footer-quick-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-item">
+                <h4 class="footer-col-heading">OPERATING HOURS</h4>
+                <p class="footer-label-gold">Mon - Fri:</p>
+                <p class="footer-col-paragraph">9:00 AM - 6:00 PM</p>
+                <p class="footer-label-gold" style="margin-top: 10px;">Sat - Sun:</p>
+                <p class="footer-col-paragraph">Closed</p>
+                <p class="footer-label-gold" style="margin-top: 10px;">Public Holiday:</p>
+                <p class="footer-col-paragraph">Closed</p>
+            </div>
+            
+            <div class="footer-col-item col-width-medium">
+                <h4 class="footer-col-heading">CONTACT US</h4>
+                <p class="footer-col-paragraph">Email: info@legacybooks.com.my</p>
+                <p class="footer-col-paragraph" style="margin-top: 4px;">Email: support@legacybooks.com.my</p>
+                <p class="footer-col-paragraph" style="margin-top: 10px;">Phone: +603-1234 5678</p>
+            </div>
+            
+            <div class="footer-col-item">
+                <h4 class="footer-col-heading">FOLLOW US</h4>
+                <ul class="footer-quick-links">
+                    <li><a href="#">Instagram: @legacybooks</a></li>
+                    <li><a href="#">TikTok: @legacybooks</a></li>
+                    <li><a href="#">Facebook: Legacy Books</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="footer-horizontal-line"></div>
+        
+        <div class="footer-academic-disclaimer">
+            <p><strong>Disclaimer:</strong> This website is NOT the official website of Legacy Books. This website was developed strictly for the purpose of learning XHTML & CSS only for the course IML254 (Introduction to Web Content Development).</p>
+            <p style="margin-top: 25px;">Recommended Browser: Google Chrome or Mozilla Firefox | Best Resolution: 1920x1080 pixels | Last Updated: June 15, 2026</p>
+        </div>
+
+        <div class="footer-bottom-dark-bar">
+            <p>&copy; 2026 Legacy Books. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        var senaraiTroliBuku = [];
+
+        function tambahKeTroli(namaBuku) {
+            senaraiTroliBuku.push(namaBuku);
+            document.getElementById("top-cart-count").innerHTML = senaraiTroliBuku.length;
+            alert("Success! '" + namaBuku + "' has been added to your cart.");
+        }
+
+        function lihatIsiTroli() {
+            if(senaraiTroliBuku.length === 0) {
+                alert("Your cart is currently empty. Start adding some books from the shop!");
+            } else {
+                var ringkasanTeks = "Items currently in your cart:\n\n";
+                for (var i = 0; i < senaraiTroliBuku.length; i++) {
+                    ringkasanTeks += (i + 1) + ". " + senaraiTroliBuku[i] + "\n";
+                }
+                ringkasanTeks += "\nTotal items: " + senaraiTroliBuku.length;
+                alert(ringkasanTeks);
+            }
+        }
+
+        function bukaPopupBayar(namaBuku, hargaBuku) {
+            document.getElementById("modal-book-name").innerHTML = namaBuku;
+            document.getElementById("modal-book-price").innerHTML = "RM " + hargaBuku;
+            document.getElementById("payment-modal-box").style.display = "block";
+            document.getElementById("bank-dropdown-container").style.display = "none";
+            document.getElementById("card-input-container").style.display = "none";
+        }
+
+        function tutupPopupBayar() {
+            document.getElementById("payment-modal-box").style.display = "none";
+            document.getElementById("payment-selection-form").reset();
+            document.getElementById("bank-dropdown-container").style.display = "none";
+            document.getElementById("card-input-container").style.display = "none";
+        }
+
+        function kawalPaparanInputCheckout() {
+            var kaedahDipilih = document.querySelector('input[name="payment_method"]:checked').value;
+            var kotakBank = document.getElementById("bank-dropdown-container");
+            var dropdownBank = document.getElementById("fpx-bank-select");
+            var kotakKad = document.getElementById("card-input-container");
+            var inputKad = document.getElementById("card-number-field");
+            
+            if (kaedahDipilih === "Online Banking") {
+                kotakBank.style.display = "block";
+                dropdownBank.required = true;
+                kotakKad.style.display = "none";
+                inputKad.required = false;
+                inputKad.value = ""; 
+            } else if (kaedahDipilih === "Credit/Debit Card") {
+                kotakKad.style.display = "block";
+                inputKad.required = true;
+                kotakBank.style.display = "none";
+                dropdownBank.required = false;
+                dropdownBank.value = "";
+            } else {
+                kotakBank.style.display = "none";
+                dropdownBank.required = false;
+                dropdownBank.value = "";
+                kotakKad.style.display = "none";
+                inputKad.required = false;
+                inputKad.value = "";
+            }
+        }
+
+        function prosesBayaran(event) {
+            event.preventDefault();
+            var pilihanKaedah = document.querySelector('input[name="payment_method"]:checked').value;
+            var namaBukuDipilih = document.getElementById("modal-book-name").innerHTML;
+            
+            if (pilihanKaedah === "Online Banking") {
+                var bankDipilih = document.getElementById("fpx-bank-select").value;
+                alert("Success! Your transaction for '" + namaBukuDipilih + "' via [Online Banking - " + bankDipilih + "] was successful!");
+            } else if (pilihanKaedah === "Credit/Debit Card") {
+                var noKad = document.getElementById("card-number-field").value;
+                alert("Success! Your transaction for '" + namaBukuDipilih + "' via [Credit/Debit Card: **** " + noKad.slice(-4) + "] was successful!");
+            } else {
+                alert("Success! Your transaction for '" + namaBukuDipilih + "' via [" + pilihanKaedah + "] was successful!");
+            }
+            tutupPopupBayar();
+        }
+    </script>
+</body>
+</html>
