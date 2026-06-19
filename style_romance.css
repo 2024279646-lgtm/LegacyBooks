@@ -3,19 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fcfbf7; 
     color: #333333;
 }
-
 .clearfix {
     clear: both;
     display: block;
     height: 0;
 }
-
 .main-header, header {
     background-color: #9eb099; 
     text-align: center;
@@ -29,7 +26,6 @@ body {
     display: block;
     margin: 0 auto 20px auto;
 }
-
 .site-title {
     font-family: 'Playfair Display', serif;
     font-size: 52px; 
@@ -38,7 +34,6 @@ body {
     letter-spacing: 0.5px;
     margin-bottom: 5px;
 }
-
 .site-slogan {
     color: #ffffff;
     font-size: 20px;
@@ -46,7 +41,6 @@ body {
     font-weight: 400;
     letter-spacing: 0.5px;
 }
-
 .navbar-container {
     background-color: #705844; 
     text-align: center;
@@ -71,12 +65,10 @@ body {
     background-color: #cc9933;
     color: #ffffff;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -98,16 +90,13 @@ body {
     font-weight: bold;
     text-align: left;
 }
-
 .dropdown-content a:hover {
     background-color: #f5f0eb;
     color: #83644b;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .utility-bar {
     max-width: 1200px;
     margin: 20px auto 0 auto !important;
@@ -115,7 +104,6 @@ body {
     position: relative;
     width: 100%;
 }
-
 .cart-box {
     float: right;
     font-size: 16px;
@@ -129,7 +117,6 @@ body {
     transform: scale(1.05);
     color: #83644b;
 }
-
 .cart-count-badge {
     background-color: #d49a17;
     color: #ffffff;
@@ -140,7 +127,6 @@ body {
     top: -8px;
     margin-left: 2px;
 }
-
 .content-container {
     max-width: 1260px; 
     margin: 20px auto 60px auto;
@@ -148,7 +134,6 @@ body {
     text-align: center;
     display: block;
 }
-
 .category-main-title {
     font-family: 'Georgia', serif;
     color: #83644b;
@@ -162,7 +147,6 @@ body {
     width: 100%;
     font-size: 0; 
 }
-
 .book-card-item {
     background: #ffffff;
     padding: 15px 12px;
@@ -175,14 +159,12 @@ body {
     text-align: center;
     font-size: 14px; 
 }
-
 .book-img-frame {
     height: 200px;
     line-height: 200px;
     text-align: center;
     margin-bottom: 12px;
 }
-
 .book-cover-img {
     max-width: 100%;
     max-height: 100%;
@@ -207,7 +189,6 @@ body {
     color: #777777;
     margin-bottom: 10px;
 }
-
 .book-spec-box {
     background-color: #fdfcf9;
     border-top: 1px dashed #e6e3dc;
@@ -220,18 +201,15 @@ body {
     line-height: 1.5;
     height: 105px; 
 }
-
 .book-spec-box p {
     margin-bottom: 2px;
 }
-
 .book-spec-box p span {
     font-weight: bold;
     color: #705235;
     display: inline-block;
     width: 58px;
 }
-
 .book-stock-status {
     font-size: 13px;
     font-weight: bold;
@@ -239,7 +217,6 @@ body {
     margin-bottom: 6px;
     display: block;
 }
-
 .book-price-text {
     color: #83644b;
     font-weight: bold;
