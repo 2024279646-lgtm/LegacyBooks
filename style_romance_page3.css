@@ -3,100 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-html, body {
-    width: 100%;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    background-color: #FDFBF7 !important; 
-    background-image: none !important; 
-    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcfbf7; 
     color: #333333;
 }
-
 .clearfix {
     clear: both;
     display: block;
     height: 0;
 }
-
 .main-header, header {
     background-color: #9eb099; 
     text-align: center;
     padding: 35px 15px 40px 15px;
     margin: 0 !important;
 }
-
-.logo-container {
-    margin-bottom: 15px;
+.logo-container .site-logo {
+    width: 170px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
 }
-
-.site-logo, .logo {
-    max-height: 140px; 
-    width: auto;
-    display: inline-block;
-    transition: transform 0.3s ease;
+.site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px; 
+    color: #D4A017; 
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
 }
-
-.site-logo:hover, .logo:hover {
-    transform: scale(1.05);
-}
-
-.site-title, header h1 {
-    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif; 
-    color: #D4A017 !important; 
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 12px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.site-slogan, .slogan {
-    color: #ffffff !important; 
+.site-slogan {
+    color: #ffffff;
+    font-size: 20px;
     font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
-
 .navbar-container {
-    background-color: #83644b; 
+    background-color: #705844; 
     text-align: center;
-    padding: 18px 10px;
-    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
-
 .navbar-links {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.nav-item {
-    color: #ffffff !important;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 22px; 
     display: inline-block;
+    padding: 0;
+    margin: 0;
 }
-
+.nav-item {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
 .nav-item:hover, .nav-item.active {
-    color: #f7ebd3 !important; 
+    background-color: #cc9933;
+    color: #ffffff;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -109,7 +80,6 @@ body {
     left: 15px;
     margin-top: 5px;
 }
-
 .dropdown-content a {
     color: #333333;
     padding: 12px 16px;
