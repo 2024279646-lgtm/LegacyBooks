@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Others - Legacy Books</title>
+    <link rel="stylesheet" href="others.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Legacy BookStore">
+        </div>
+        <h1 class="site-title">Legacy Books</h1>
+        <p class="site-slogan">Preserving Stories, Inspiring Generations</p>
+    </header>
+
+    <nav class="navbar-container">
+        <div class="navbar-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="aboutus.html" class="nav-item">About Us</a>
+            <a href="fiction.html" class="nav-item">Fiction</a>
+            
+            <div class="dropdown">
+                <a href="nonfiction.html" class="nav-item">Non-Fiction</a>
+                <div class="dropdown-content">
+                    <a href="business.html">Business &amp; Management</a>
+                    <a href="economy.html">Economy</a>
+                    <a href="history.html">History</a>
+                    <a href="religion.html">Religion</a>
+                    <a href="self health.html">Self Health</a>
+                </div>
+            </div>
+
+            <a href="children.html" class="nav-item">Children's Books</a>
+            <a href="facilities.html" class="nav-item">Facilities</a>
+            <a href="stationery.html" class="nav-item">Stationery</a>
+            <a href="others.html" class="nav-item active">Others</a>
+            <a href="our-group.html" class="nav-item">Our Group</a>
+        </div>
+    </nav>
+
+    <div class="utility-bar">
+        <div class="cart-box" onclick="viewCartContents()">
+            <span>Cart 🛒</span>
+            <span id="top-cart-count" class="cart-count-badge">0</span>
+        </div>
+    </div>
+	
+    <main class="content-container">
+        
+        <div class="voucher-claim-container">
+            <div class="voucher-details">
+                <span class="voucher-icon">🎁</span>
+                <div>
+                    <h4 class="voucher-title">Special Mega Promo!</h4>
+                    <p class="voucher-desc">Buy any 5 merchandise items and claim 1 extra mystery item completely FREE!</p>
+                </div>
+            </div>
+            <button id="claim-voucher-btn" class="voucher-action-btn" onclick="claimBuy5Get1Free()">Claim Free Item</button>
+        </div>
+
+        <h2 class="category-main-title">EXCLUSIVE MERCHANDISE &amp; ITEMS</h2>
+        
+        <div class="product-cards-grid">
+            
+            <div class="item-card-box">
+                <div class="item-img-frame"><img src="pencilcase.jpg" alt="Pencil Case" class="item-cover-img"></div>
+                <div><h3 class="item-title-text">Premium Pencil Case</h3></div>
+                <p class="item-price-text">RM 15.90</p>
+                <p class="stock-status-text">✓ In Stock</p>
+                <button class="item-cart-btn" onclick="addToCart('Premium Pencil Case')">Add to Cart</button>
+                <button class="item-buy-now-btn" onclick="openPaymentPopup('Premium Pencil Case', '15.90')">Buy Now</button>
+            </div>
+
+            <div class="item-card-box">
+                <div class="item-img-frame"><img src="backpack.jpg" alt="Backpack" class="item-cover-img"></div>
+                <div><h3 class="item-title-text">Ergonomic Backpack</h3></div>
+                <p class="item-price-text">RM 79.00</p>
+                <p class="stock-status-text">✓ In Stock</p>
+                <button class="item-cart-btn" onclick="addToCart('Ergonomic Backpack')">Add to Cart</button>
+                <button class="item-buy-now-btn" onclick="openPaymentPopup('Ergonomic Backpack', '79.00')">Buy Now</button>
+            </div>
+
+            <div class="item-card-box">
+                <div class="item-img-frame"><img src="launchbag.jpg" alt="Lunch Bag" class="item-cover-img"></div>
+                <div><h3 class="item-title-text">Insulated Lunch Bag</h3></div>
+                <p class="item-price-text">RM 25.00</p>
+                <p class="stock-status-text">✓ In Stock</p>
+                <button class="item-cart-btn" onclick="addToCart('Insulated Lunch Bag')">Add to Cart</button>
+                <button class="item-buy-now-btn" onclick="openPaymentPopup('Insulated Lunch Bag', '25.00')">Buy Now</button>
+            </div>
+
+            <div class="item-card-box">
+                <div class="item-img-frame"><img src="monopoly.jpg" alt="Monopoly" class="item-cover-img"></div>
+                <div><h3 class="item-title-text">Monopoly Board Game</h3></div>
+                <p class="item-price-text">RM 89.90</p>
+                <p class="stock-status-text">✓ In Stock</p>
+                <button class="item-cart-btn" onclick="addToCart('Monopoly Board Game')">Add to Cart</button>
+                <button class="item-buy-now-btn" onclick="openPaymentPopup('Monopoly Board Game', '89.90')">Buy Now</button>
+            </div>
+
+            <div class="item-card-box">
+                <div class="item-img-frame"><img src="unocard.jpg" alt="Uno Card" class="item-cover-img"></div>
+                <div><h3 class="item-title-text">Uno Card Deck Case</h3></div>
+                <p class="item-price-text">RM 18.00</p>
+                <p class="stock-status-text">✓ In Stock</p>
+                <button class="item-cart-btn" onclick="addToCart('Uno Card Deck Case')">Add to Cart</button>
+                <button class="item-buy-now-btn" onclick="openPaymentPopup('Uno Card Deck Case', '18.00')">Buy Now</button>
+            </div>
+
+            <div class="item-card-box">
+                <div class="item-img-frame"><img src="lego.jpg" alt="Lego" class="item-cover-img"></div>
+                <div><h3 class="item-title-text">Lego Architecture Set</h3></div>
+                <p class="item-price-text">RM 120.00</p>
+                <p class="stock-status-text">✓ In Stock</p>
+                <button class="item-cart-btn" onclick="addToCart('Lego Architecture Set')">Add to Cart</button>
+                <button class="item-buy-now-btn" onclick="openPaymentPopup('Lego Architecture Set', '120.00')">Buy Now</button>
+            </div>
+
+            <div class="item-card-box">
+                <div class="item-img-frame"><img src="cardgame.jpg" alt="Card Game" class="item-cover-img"></div>
+                <div><h3 class="item-title-text">Premium Strategy Cards</h3></div>
+                <p class="item-price-text">RM 35.00</p>
+                <p class="stock-status-text">✓ In Stock</p>
+                <button class="item-cart-btn" onclick="addToCart('Premium Strategy Cards')">Add to Cart</button>
+                <button class="item-buy-now-btn" onclick="openPaymentPopup('Premium Strategy Cards', '35.00')">Buy Now</button>
+            </div>
+
+            <div class="item-card-box">
+                <div class="item-img-frame"><img src="playdoh.jpg" alt="Play-Doh" class="item-cover-img"></div>
+                <div><h3 class="item-title-text">Play-Doh Modeling Kit</h3></div>
+                <p class="item-price-text">RM 29.90</p>
+                <p class="stock-status-text">✓ In Stock</p>
+                <button class="item-cart-btn" onclick="addToCart('Play-Doh Modeling Kit')">Add to Cart</button>
+                <button class="item-buy-now-btn" onclick="openPaymentPopup('Play-Doh Modeling Kit', '29.90')">Buy Now</button>
+            </div>
+
+            <div class="item-card-box">
+                <div class="item-img-frame"><img src="ball.jpg" alt="Ball" class="item-cover-img"></div>
+                <div><h3 class="item-title-text">Inflatable In-Store Ball</h3></div>
+                <p class="item-price-text">RM 12.50</p>
+                <p class="stock-status-text">✓ In Stock</p>
+                <button class="item-cart-btn" onclick="addToCart('Inflatable In-Store Ball')">Add to Cart</button>
+                <button class="item-buy-now-btn" onclick="openPaymentPopup('Inflatable In-Store Ball', '12.50')">Buy Now</button>
+            </div>
+
+            <div class="item-card-box">
+                <div class="item-img-frame"><img src="puzzle.jpg" alt="Puzzle" class="item-cover-img"></div>
+                <div><h3 class="item-title-text">Landscape Jigsaw Puzzle</h3></div>
+                <p class="item-price-text">RM 45.00</p>
+                <p class="stock-status-text">✓ In Stock</p>
+                <button class="item-cart-btn" onclick="addToCart('Landscape Jigsaw Puzzle')">Add to Cart</button>
+                <button class="item-buy-now-btn" onclick="openPaymentPopup('Landscape Jigsaw Puzzle', '45.00')">Buy Now</button>
+            </div>
+
+        </div> 
+    </main>
+
+    <div id="payment-modal-box" class="modal-overlay">
+        <div class="modal-content-card">
+            <span class="modal-close-btn" onclick="closePaymentPopup()">&times;</span>
+            <h3 class="modal-payment-title">Secure Checkout</h3>
+            
+            <div class="modal-product-summary">
+                <p><strong>Item:</strong> <span id="modal-item-name">-</span></p>
+                <p><strong>Total Price:</strong> <span id="modal-item-price" class="modal-price-highlight">RM 0.00</span></p>
+            </div>
+            
+            <h4 class="modal-section-subtitle">Select Payment Method:</h4>
+            <form id="payment-selection-form" onsubmit="processPayment(event)">
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="Online Banking" required onchange="controlCheckoutInputDisplay()">
+                    <span class="option-custom-text">🌐 Online Banking (FPX)</span>
+                </label>
+                
+                <div id="bank-dropdown-container" class="bank-selection-container">
+                    <label for="fpx-bank-select">Select Your Bank:</label>
+                    <select id="fpx-bank-select" class="bank-select-dropdown">
+                        <option value="" disabled selected>-- Choose Bank --</option>
+                        <option value="CIMB Bank">CIMB Bank</option>
+                        <option value="Public Bank">Public Bank</option>
+                        <option value="RHB Bank">RHB Bank</option>
+                        <option value="Maybank">Maybank</option>
+                        <option value="BSN">BSN</option>
+                    </select>
+                </div>
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="Credit/Debit Card" onchange="controlCheckoutInputDisplay()">
+                    <span class="option-custom-text">💳 Credit / Debit Card</span>
+                </label>
+
+                <div id="card-input-container" class="card-details-container">
+                    <label for="card-number-field">Enter your card number:</label>
+                    <input type="text" id="card-number-field" class="card-input-box" placeholder="1234 5678 9101 2345" maxlength="19">
+                </div>
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="E-Wallet" onchange="controlCheckoutInputDisplay()">
+                    <span class="option-custom-text">📱 E-Wallet (Touch 'n Go)</span>
+                </label>
+                
+                <button type="submit" class="modal-pay-submit-btn">Proceed to Pay</button>
+            </form>
+        </div>
+    </div>
+
+   <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-column">
+                <h3>LEGACY BOOKS</h3>
+                <p>Preserving Stories, Inspiring Generations. Hub carian buku korporat dan akademik pilihan utama anda.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>HELP & SUPPORT</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>OPERATING HOURS</h3>
+                <p><span>Mon - Fri:</span> 9:00 AM - 6:00 PM</p>
+                <p><span>Sat - Sun:</span> Closed</p>
+                <p><span>Public Holiday:</span> Closed</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>CONTACT US</h3>
+                <p>Email: info@legacybooks.com.my</p>
+                <p>Email: support@legacybooks.com.my</p>
+                <p class="phone-text">Phone: +603-1234 5678</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <li><a href="#">Instagram: @legacybooks</a></li>
+                    <li><a href="#">TikTok: @legacybooks</a></li>
+                    <li><a href="#">Facebook: Legacy Books</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <hr class="footer-divider">
+        
+        <div class="disclaimer-area">
+            <p class="disclaimer-text"><strong>Disclaimer:</strong> This website is NOT the official website of Legacy Books. This website was developed strictly for the purpose of learning XHTML & CSS only for the course IML254 (Introduction to Web Content Development).</p>
+            <p class="tech-specs">Recommended Browser: Google Chrome or Mozilla Firefox | Best Resolution: 1920x1080 pixels</p>
+            <p class="last-update">Last Updated: June 15, 2026</p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Legacy Books. All Rights Reserved.</p>
+        </div>
+    </footer>
+	
+	
+    <script>
+        var cartItemsList = [];
+
+        // Dynamic price mapping to handle bulk calculations
+        var itemPrices = {
+            "Premium Pencil Case": 15.90,
+            "Ergonomic Backpack": 79.00,
+            "Insulated Lunch Bag": 25.00,
+            "Monopoly Board Game": 89.90,
+            "Uno Card Deck Case": 18.00,
+            "Lego Architecture Set": 120.00,
+            "Premium Strategy Cards": 35.00,
+            "Play-Doh Modeling Kit": 29.90,
+            "Inflatable In-Store Ball": 12.50,
+            "Landscape Jigsaw Puzzle": 45.00,
+            "FREE Mystery Gift Item 🎁": 0.00
+        };
+
+        function claimBuy5Get1Free() {
+            var currentCartCount = cartItemsList.length;
+            
+            if (currentCartCount >= 5) {
+                cartItemsList.push("FREE Mystery Gift Item 🎁");
+                document.getElementById("top-cart-count").innerHTML = cartItemsList.length;
+                
+                alert("Awesome! You qualify for the Buy 5 Get 1 Free deal!\n\n1x 'FREE Mystery Gift Item' has been added to your cart!");
+                
+                var btn = document.getElementById("claim-voucher-btn");
+                btn.innerHTML = "✓ Reward Claimed";
+                btn.style.backgroundColor = "#2e7d32";
+                btn.disabled = true;
+            } else {
+                var itemsNeeded = 5 - currentCartCount;
+                alert("You currently have " + currentCartCount + " item(s) in your cart.\n\nYou need to add " + itemsNeeded + " more item(s) to qualify!");
+            }
+        }
+
+        function addToCart(itemName) {
+            cartItemsList.push(itemName);
+            document.getElementById("top-cart-count").innerHTML = cartItemsList.length;
+            alert("Success! '" + itemName + "' has been added to your cart.");
+        }
+
+        function viewCartContents() {
+            if(cartItemsList.length === 0) {
+                alert("Your cart is currently empty.");
+            } else {
+                var summaryText = "Items currently in your cart:\n";
+                var totalCartPrice = 0;
+
+                for (var i = 0; i < cartItemsList.length; i++) {
+                    var name = cartItemsList[i];
+                    var price = itemPrices[name] || 0;
+                    summaryText += (i + 1) + ". " + name + " (RM " + price.toFixed(2) + ")\n";
+                    totalCartPrice += price;
+                }
+                
+                summaryText += "\nEstimated Total: RM " + totalCartPrice.toFixed(2);
+                summaryText += "\n\nDo you want to proceed to checkout and pay for all items?";
+
+                if (confirm(summaryText)) {
+                    openPaymentPopup("All Cart Items (" + cartItemsList.length + " items)", totalCartPrice.toFixed(2));
+                }
+            }
+        }
+
+        function openPaymentPopup(itemName, itemPrice) {
+            document.getElementById("modal-item-name").innerHTML = itemName;
+            document.getElementById("modal-item-price").innerHTML = "RM " + itemPrice;
+            document.getElementById("payment-modal-box").style.display = "block";
+        }
+
+        function closePaymentPopup() {
+            document.getElementById("payment-modal-box").style.display = "none";
+            document.getElementById("payment-selection-form").reset();
+            document.getElementById("bank-dropdown-container").style.display = "none";
+            document.getElementById("card-input-container").style.display = "none";
+        }
+
+        function controlCheckoutInputDisplay() {
+            var selectedMethod = document.querySelector('input[name="payment_method"]:checked').value;
+            document.getElementById("bank-dropdown-container").style.display = (selectedMethod === "Online Banking") ? "block" : "none";
+            document.getElementById("card-input-container").style.display = (selectedMethod === "Credit/Debit Card") ? "block" : "none";
+        }
+
+        function processPayment(event) {
+            event.preventDefault();
+            var selectedItemName = document.getElementById("modal-item-name").innerHTML;
+            alert("Success! Your transaction for '" + selectedItemName + "' was successful!");
+            
+            if (selectedItemName.includes("All Cart Items")) {
+                cartItemsList = [];
+                document.getElementById("top-cart-count").innerHTML = "0";
+                
+                var btn = document.getElementById("claim-voucher-btn");
+                if (btn) {
+                    btn.innerHTML = "Claim Free Item";
+                    btn.style.backgroundColor = "#e67e22";
+                    btn.disabled = false;
+                }
+            }
+            closePaymentPopup();
+        }
+    </script>
+</body>
+</html>
