@@ -4,16 +4,9 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    background-color: #FDFBF7 !important; 
-    background-image: none !important; 
-    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcfbf7; 
     color: #333333;
 }
 
@@ -30,10 +23,6 @@ body {
     margin: 0 !important;
 }
 
-.logo-container {
-    margin-bottom: 15px;
-}
-
 .logo-container .site-logo {
     width: 170px; 
     height: auto;
@@ -48,14 +37,6 @@ body {
     font-weight: 700;
     letter-spacing: 0.5px;
     margin-bottom: 5px;
-}
-
-.site-slogan {
-    color: #ffffff;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: 0.5px;
 }
 
 .navbar-container {
