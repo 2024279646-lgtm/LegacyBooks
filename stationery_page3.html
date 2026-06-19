@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationery - Legacy Books</title>
+    <link rel="stylesheet" href="style_stationery_page3.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Legacy BookStore" class="site-logo">
+        </div>
+        <h1 class="site-title">Legacy Books</h1>
+        <p class="site-slogan">Preserving Stories, Inspiring Generations</p>
+    </header>
+
+    <nav class="navbar-container">
+        <div class="navbar-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About Us</a>
+            <div class="dropdown">
+                <a href="fiction.html" class="nav-item">Fiction</a>
+                <div class="dropdown-content">
+                    <a href="horror.html">Horror & Paranormal</a>
+                    <a href="crime.html">Crime & Thriller</a>
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="romance.html">Romance</a>
+                    <a href="family.html">Family & Friendship</a>
+                </div>
+            </div>
+            <a href="nonfiction.html" class="nav-item">Non-Fiction</a>
+            <a href="children.html" class="nav-item">Children's Books</a>
+            <a href="facilities.html" class="nav-item">Facilities</a>
+            <a href="stationery.html" class="nav-item active">Stationery</a>
+            <a href="others.html" class="nav-item">Others</a>
+            <a href="our-group.html" class="nav-item">Our Group</a>
+        </div>
+    </nav>
+
+    <div class="utility-bar">
+        <div class="cart-box" onclick="viewCart()">
+            <span class="cart-label">Cart 🛒</span>
+            <span id="top-cart-count" class="cart-count-badge">0</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <main class="content-container">
+        <h2 class="category-main-title">STATIONERY</h2>
+        
+        <div class="product-cards-grid">
+            <div class="book-card-item">
+                <div class="book-img-frame"><img src="stationery11.jpg.jpg" alt="FABER-CASTELL Shake & Paint Markers 6" class="book-cover-img"></div>
+                <div class="book-title-container"><h3 class="book-title-text">FABER-CASTELL Shake & Paint Markers 6</h3></div>
+                <p class="book-author-text">Brand: FABERCASTELL</p>
+                <div class="book-spec-box">
+                    <p><span>SKU:</span> 285507</p>
+                    <p><span>Edition:</span> Black Edition</p>
+                    <p><span>Color:</span> Classic Set</p>
+                    <p><span>Pieces:</span> 6 Paint Acrylic Markers</p>
+                    <p><span>Weight:</span> 45 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 50.00</p>
+                <button class="book-cart-btn" onclick="addToCart('FABER-CASTELL Shake & Paint Markers 6')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('FABER-CASTELL Shake & Paint Markers 6', '50.00')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame"><img src="stationery12.jpg.jpg" alt="FABER CASTELL Stapler No.10 Blue " class="book-cover-img"></div>
+                <div class="book-title-container"><h3 class="book-title-text">FABER CASTELL Stapler No.10 Blue </h3></div>
+                <p class="book-author-text">Brand: FABERCASTELL</p>
+                <div class="book-spec-box">
+                    <p><span>SKU:</span> 401151</p>
+                    <p><span>Color:</span> Blue</p>
+                    <p><span>Capacity:</span> staple up to 20 sheets</p>
+                    <p><span>Material:</span> Quality steel inner</p>
+                    <p><span>Weight:</span> 22 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 6.70</p>
+                <button class="book-cart-btn" onclick="addToCart('FABER CASTELL Stapler No.10 Blue')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('FABER CASTELL Stapler No.10 Blue', '6.70')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame"><img src="stationery13.jpg.jpg" alt="UNICORN Stationery - Pencil Khat" class="book-cover-img"></div>
+                <div class="book-title-container"><h3 class="book-title-text">UNICORN Stationery - Pencil Khat</h3></div>
+                <p class="book-author-text">Brand: UNICORN</p>
+                <div class="book-spec-box">
+                    <p><span>SKU:</span> 9557368933590</p>
+                    <p><span>Sizes:</span> Calligraphy 1.8mm</p>
+                    <p><span>Quantity:</span> 1 pcs</p>
+                    <p><span>Material:</span> Plastic</p>
+                    <p><span>Weight:</span> 120 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 5.90</p>
+                <button class="book-cart-btn" onclick="addToCart('UNICORN Stationery - Pencil Khat')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('UNICORN Stationery - Pencil Khat', '5.90')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame"><img src="stationery14.jpg.jpg" alt="STABILO Swing Cool Pastel Highlighter " class="book-cover-img"></div>
+                <div class="book-title-container"><h3 class="book-title-text">STABILO Swing Cool Pastel Highlighter </h3></div>
+                <p class="book-author-text">Brand: Stabilo</p>
+                <div class="book-spec-box">
+                    <p><span>SKU:</span> 275/8-08-1</p>
+                    <p><span>Type:</span> Adhesive Flags</p>
+                    <p><span>Technology:</span> Anti-Dry-Out</p>
+                    <p><span>Quantity:</span> 8 pcs</p>
+                    <p><span>Weight:</span> 107 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 43.20</p>
+                <button class="book-cart-btn" onclick="addToCart('STABILO Swing Cool Pastel Highlighter ')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('STABILO Swing Cool Pastel Highlighter ', '43.20')">Buy Now</button>
+            </div>
+
+            <div class="book-card-item">
+                <div class="book-img-frame"><img src="stationery15.jpg.jpg" alt="UNICORN Stationery - 12 Colours Air Dry Clay" class="book-cover-img"></div>
+                <div class="book-title-container"><h3 class="book-title-text">UNICORN Stationery - 12 Colours Air Dry Clay</h3></div>
+                <p class="book-author-text">Brand: UNICORN</p>
+                <div class="book-spec-box">
+                    <p><span>SKU:</span> 9557368133853</p>
+                    <p><span>Colour:</span> 12 colours</p>
+                    <p><span>Features:</span> Easy to shape</p>
+                    <p><span>Materials:</span> Non-toxic</p>
+                    <p><span>Weight:</span> 120 g</p>
+                </div>
+                <p class="book-stock-status">In Stock</p>
+                <p class="book-price-text">RM 7.50</p>
+                <button class="book-cart-btn" onclick="addToCart('UNICORN Stationery - 12 Colours Air Dry Clay')">Add to Cart</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('UNICORN Stationery - 12 Colours Air Dry Clay', '7.50')">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="pagination-section">
+            <a href="stationery_page2.html" class="page-link">&laquo; Previous</a>
+            <a href="stationery.html" class="page-link num-btn">1</a>
+            <a href="stationery_page2.html" class="page-link num-btn">2</a>
+            <a href="stationery_page3.html" class="page-link num-btn active">3</a>
+            <a href="#" class="page-link next-btn disabled">Next &raquo;</a>
+        </div>
+        
+        <div class="clearfix"></div>
+    </main>
+    
+    <div id="payment-modal-box" class="modal-overlay">
+        <div class="modal-content-card">
+            <span class="modal-close-btn" onclick="closePaymentModal()">&times;</span>
+            <h3 class="modal-payment-title">Secure Checkout</h3>
+            
+            <div class="modal-product-summary">
+                <p><strong>Item:</strong> <span id="modal-item-name">-</span></p>
+                <p><strong>Total Price:</strong> <span id="modal-item-price" class="modal-price-highlight">RM 0.00</span></p>
+            </div>
+            
+            <h4 class="modal-section-subtitle">Select Payment Method:</h4>
+            <form id="payment-selection-form" onsubmit="processPayment(event)">
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="Online Banking" required onchange="toggleCheckoutInputs()">
+                    <span class="option-custom-text">🌐 Online Banking (FPX)</span>
+                </label>
+                
+                <div id="bank-dropdown-container" class="card-details-container" style="display:none; border:1px solid #cccccc; background:#ffffff; margin-bottom:10px; padding:10px;">
+                    <label for="fpx-bank-select" class="card-input-label" style="display:inline-block; margin-right:10px;">Select Your Bank:</label>
+                    <select id="fpx-bank-select" class="card-input-box" style="width:auto; display:inline-block; letter-spacing:normal;">
+                        <option value="" disabled selected>-- Choose Bank --</option>
+                        <option value="CIMB Bank">CIMB Bank</option>
+                        <option value="Public Bank">Public Bank</option>
+                        <option value="RHB Bank">RHB Bank</option>
+                        <option value="Maybank">Maybank</option>
+                        <option value="BSN">BSN</option>
+                    </select>
+                </div>
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="Credit/Debit Card" onchange="toggleCheckoutInputs()">
+                    <span class="option-custom-text">💳 Credit / Debit Card</span>
+                </label>
+
+                <div id="card-input-container" class="card-details-container">
+                    <label for="card-number-field" class="card-input-label">Enter your card number:</label>
+                    <input type="text" id="card-number-field" class="card-input-box" placeholder="1234 5678 9101 2345" maxlength="19">
+                </div>
+                
+                <label class="payment-option-label">
+                    <input type="radio" name="payment_method" value="E-Wallet" onchange="toggleCheckoutInputs()">
+                    <span class="option-custom-text">📱 E-Wallet (Touch 'n Go / GrabPay)</span>
+                </label>
+                
+                <button type="submit" class="modal-pay-submit-btn">Proceed to Pay</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>LEGACY BOOKS</h3>
+                <p>Preserving Stories, Inspiring Generations. Your search hub for corporate and academic books.</p>
+            </div>
+            <div class="footer-column">
+                <h3>HELP & SUPPORT</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>OPERATING HOURS</h3>
+                <p><span>Mon - Fri:</span> 9:00 AM - 6:00 PM</p>
+                <p><span>Sat - Sun:</span> Closed</p>
+                <p><span>Public Holiday:</span> Closed</p>
+            </div>
+            <div class="footer-column">
+                <h3>CONTACT US</h3>
+                <p>Email: info@legacybooks.com.my</p>
+                <p>Email: support@legacybooks.com.my</p>
+                <p class="phone-text">Phone: +603-1234 5678</p>
+            </div>
+            <div class="footer-column">
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <li><a href="#">Instagram: @legacybooks</a></li>
+                    <li><a href="#">TikTok: @legacybooks</a></li>
+                    <li><a href="#">Facebook: Legacy Books</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <hr class="footer-divider">
+        <div class="disclaimer-area">
+            <p class="disclaimer-text"><strong>Disclaimer:</strong> This website is NOT the official website of Legacy Books. This website was developed strictly for the purpose of learning XHTML & CSS only for the course IML254 (Introduction to Web Content Development).</p>
+            <p class="tech-specs">Recommended Browser: Google Chrome or Mozilla Firefox | Best Resolution: 1920x1080 pixels</p>
+            <p class="last-update">Last Updated: June 15, 2026</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Legacy Books. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        console.log("script loaded")
+        var cartList = [];
+
+        function addToCart(itemName) {
+            cartList.push(itemName); 
+            document.getElementById("top-cart-count").innerHTML = cartList.length;
+            alert("Success! '" + itemName + "' has been added to your cart.");
+        }
+
+        function viewCart() {
+            if(cartList.length === 0) {
+                alert("Your cart is currently empty. Start adding some items from the shop!");
+            } else {
+                var summaryText = "Items currently in your cart:\n\n";
+                for (var i = 0; i < cartList.length; i++) {
+                    summaryText += (i + 1) + ". " + cartList[i] + "\n";
+                }
+                summaryText += "\nTotal items: " + cartList.length;
+                alert(summaryText);
+            }
+        }
+
+        function openPaymentModal(itemName, itemPrice) {
+            document.getElementById("modal-item-name").innerHTML = itemName;
+            document.getElementById("modal-item-price").innerHTML = "RM " + itemPrice;
+            document.getElementById("payment-modal-box").style.display = "block";
+            
+            document.getElementById("bank-dropdown-container").style.display = "none";
+            document.getElementById("card-input-container").style.display = "none";
+        }
+
+        function closePaymentModal() {
+            document.getElementById("payment-modal-box").style.display = "none";
+            document.getElementById("payment-selection-form").reset();
+            document.getElementById("bank-dropdown-container").style.display = "none";
+            document.getElementById("card-input-container").style.display = "none";
+        }
+
+        function toggleCheckoutInputs() {
+            var selectedMethod = document.querySelector('input[name="payment_method"]:checked').value;
+            
+            var bankBox = document.getElementById("bank-dropdown-container");
+            var bankDropdown = document.getElementById("fpx-bank-select");
+            
+            var cardBox = document.getElementById("card-input-container");
+            var cardInput = document.getElementById("card-number-field");
+            
+            if (selectedMethod === "Online Banking") {
+                bankBox.style.display = "block";
+                bankDropdown.required = true;
+                
+                cardBox.style.display = "none";
+                cardInput.required = false;
+                cardInput.value = ""; 
+            } 
+            else if (selectedMethod === "Credit/Debit Card") {
+                cardBox.style.display = "block";
+                cardInput.required = true;
+                
+                bankBox.style.display = "none";
+                bankDropdown.required = false;
+                bankDropdown.value = "";
+            } 
+            else {
+                bankBox.style.display = "none";
+                bankDropdown.required = false;
+                bankDropdown.value = "";
+                
+                cardBox.style.display = "none";
+                cardInput.required = false;
+                cardInput.value = "";
+            }
+        }
+
+        function processPayment(event) {
+            event.preventDefault();
+            var selectedMethod = document.querySelector('input[name="payment_method"]:checked').value;
+            var itemName = document.getElementById("modal-item-name").innerHTML;
+            
+            if (selectedMethod === "Online Banking") {
+                var selectedBank = document.getElementById("fpx-bank-select").value;
+                alert("Success! Your transaction for '" + itemName + "' via [Online Banking - " + selectedBank + "] was successful!");
+            } else if (selectedMethod === "Credit/Debit Card") {
+                var cardNum = document.getElementById("card-number-field").value;
+                alert("Success! Your transaction for '" + itemName + "' via [Credit/Debit Card: **** " + cardNum.slice(-4) + "] was successful!");
+            } else {
+                alert("Success! Your transaction for '" + itemName + "' via [" + selectedMethod + "] was successful!");
+            }
+            closePaymentModal();
+        }
+    </script>
+</body>
+</html>
