@@ -47,8 +47,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-
-/* NAVBAR */
 .navbar-container {
     background-color: #83644b; 
     text-align: center;
@@ -112,7 +110,6 @@ body {
     display: block;
 }
 
-/* UTILITY / CART BOX */
 .utility-bar {
     max-width: 1200px;
     margin: 20px auto 0 auto !important;
