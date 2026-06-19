@@ -71,6 +71,7 @@ body {
     background-color: #cc9933;
     color: #ffffff;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -107,7 +108,6 @@ body {
     display: block;
 }
 
-/* UTILITY / CART BOX */
 .utility-bar {
     max-width: 1200px;
     margin: 20px auto 0 auto !important;
@@ -141,7 +141,6 @@ body {
     margin-left: 2px;
 }
 
-/* PRODUCT CONTENT */
 .content-container {
     max-width: 1260px; 
     margin: 20px auto 60px auto;
