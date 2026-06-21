@@ -46,6 +46,11 @@
                     <option value="BSN">BSN</option>
                     <option value="Hong Leong Bank">Hong Leong Bank</option>
                     <option value="Public Bank">Public Bank</option>
+                    <option value="Maybank">Maybank</option>
+                    <option value="HSBC Bank">HSBC Bank</option>
+                    <option value="Bank Muamalat">Bank Muamalat</option>
+                    <option value="Bank Rakyat">Bank Rakyat</option>
+                    <option value="Affin Bank">Affin Bank</option>
                 </select>
             </div>
 
@@ -57,11 +62,6 @@
             <div id="card-box" class="hidden-box">
                 <label for="card-number">Card Number</label>
                 <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
-            </div>
-
-            <div class="payment-option">
-                <input type="radio" id="ewallet" name="payment_method" value="E-Wallet" onchange="togglePaymentFields()">
-                <label for="ewallet">E-Wallet</label>
             </div>
 
             <button type="submit">Place Order</button>
@@ -93,15 +93,6 @@
                 bankBox.style.display = "none";
                 bankSelect.required = false;
                 bankSelect.value = "";
-            } 
-            else {
-                bankBox.style.display = "none";
-                bankSelect.required = false;
-                bankSelect.value = "";
-
-                cardBox.style.display = "none";
-                cardInput.required = false;
-                cardInput.value = "";
             }
         }
 
@@ -118,9 +109,6 @@
             else if (paymentMethod === "Credit/Debit Card") {
                 var cardNumber = document.getElementById("card-number").value;
                 alert("Thank you " + fullName + "! Your order has been placed successfully via Credit/Debit Card ending with " + cardNumber.slice(-4) + ".");
-            } 
-            else {
-                alert("Thank you " + fullName + "! Your order has been placed successfully via E-Wallet.");
             }
 
             document.getElementById("checkout-form").reset();
