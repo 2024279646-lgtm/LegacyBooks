@@ -11,7 +11,7 @@
     <div class="container">
         <h2>Delivery Information</h2>
 
-        <form>
+        <form onsubmit="placeOrder(event)">
             <label>Full Name</label>
             <input type="text" placeholder="Enter your full name" required>
 
@@ -27,17 +27,100 @@
             <label>State</label>
             <input type="text" placeholder="Enter state" required>
 
-            <label>Payment Method</label>
-            <select required>
-                <option value="">-- Select Payment Method --</option>
-                <option>Online Banking (FPX)</option>
-                <option>Credit / Debit Card</option>
-                <option>E-Wallet</option>
-            </select>
+            <label>Select Payment Method</label>
+
+            <div class="payment-option">
+                <input type="radio" name="payment_method" value="Online Banking" onchange="togglePaymentFields()" required>
+                <span>Online Banking (FPX)</span>
+            </div>
+
+            <div id="bank-box" class="hidden-box">
+                <label>Select Your Bank</label>
+                <select id="bank-select">
+                    <option value="">-- Choose Bank --</option>
+                    <option value="CIMB">CIMB</option>
+                    <option value="RHB">RHB</option>
+                    <option value="Bank Islam">Bank Islam</option>
+                    <option value="BSN">BSN</option>
+                    <option value="Hong Leong Bank">Hong Leong Bank</option>
+                    <option value="Public Bank">Public Bank</option>
+                </select>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" name="payment_method" value="Credit/Debit Card" onchange="togglePaymentFields()">
+                <span>Credit / Debit Card</span>
+            </div>
+
+            <div id="card-box" class="hidden-box">
+                <label>Card Number</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" name="payment_method" value="E-Wallet" onchange="togglePaymentFields()">
+                <span>E-Wallet</span>
+            </div>
 
             <button type="submit">Place Order</button>
         </form>
     </div>
+
+    <script>
+        function togglePaymentFields() {
+            var selectedMethod = document.querySelector('input[name="payment_method"]:checked').value;
+
+            var bankBox = document.getElementById("bank-box");
+            var bankSelect = document.getElementById("bank-select");
+
+            var cardBox = document.getElementById("card-box");
+            var cardInput = document.getElementById("card-number");
+
+            if (selectedMethod === "Online Banking") {
+                bankBox.style.display = "block";
+                bankSelect.required = true;
+
+                cardBox.style.display = "none";
+                cardInput.required = false;
+                cardInput.value = "";
+            }
+            else if (selectedMethod === "Credit/Debit Card") {
+                cardBox.style.display = "block";
+                cardInput.required = true;
+
+                bankBox.style.display = "none";
+                bankSelect.required = false;
+                bankSelect.value = "";
+            }
+            else {
+                bankBox.style.display = "none";
+                bankSelect.required = false;
+                bankSelect.value = "";
+
+                cardBox.style.display = "none";
+                cardInput.required = false;
+                cardInput.value = "";
+            }
+        }
+
+        function placeOrder(event) {
+            event.preventDefault();
+
+            var paymentMethod = document.querySelector('input[name="payment_method"]:checked').value;
+
+            if (paymentMethod === "Online Banking") {
+                var bank = document.getElementById("bank-select").value;
+                alert("Order placed successfully using Online Banking (" + bank + ")!");
+            }
+            else if (paymentMethod === "Credit/Debit Card") {
+                var cardNumber = document.getElementById("card-number").value;
+                alert("Order placed successfully using Credit/Debit Card ending with " + cardNumber.slice(-4) + "!");
+            }
+            else {
+                alert("Order placed successfully using E-Wallet!");
+            }
+        }
+    </script>
 
 </body>
 </html>
