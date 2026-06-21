@@ -16,7 +16,7 @@
         <p class="site-slogan">Preserving Stories, Inspiring Generations</p>
     </header>
 
-  <nav class="navbar-container">
+    <nav class="navbar-container">
         <div class="navbar-links">
             <a href="index.html" class="nav-item">Home</a>
             <a href="about.html" class="nav-item">About Us</a>
@@ -30,7 +30,7 @@
                     <a href="usborne.html">Usborne Reading Series</a>
                     <a href="manga.html">Manga & Graphic Novels</a>
                     <a href="roald.html">Roald Dahl Series</a>
-                    <a href="diary.html"> Diary of A Wimpy Kid</a>
+                    <a href="diary.html">Diary of A Wimpy Kid</a>
                 </div>
             </div>
 
@@ -41,6 +41,7 @@
         </div>
     </nav>
 
+    <div class="utility-bar">
         <div class="cart-box" onclick="viewCart()">
             <span class="cart-label">Cart 🛒</span>
             <span id="top-cart-count" class="cart-count-badge">0</span>
@@ -71,7 +72,7 @@
                 <p class="book-stock-status">In Stock</p>
                 <p class="book-price-text">RM 15.00</p>
                 <button class="book-cart-btn" onclick="addToCart('Fantastic Mr Fox')">Add to Cart</button>
-                <button class="book-buy-now-btn" onclick="window.location.href='checkout.html'">Buy Now</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('Fantastic Mr Fox', '15.00')">Buy Now</button>
             </div>
 
             <div class="book-card-item">
@@ -92,7 +93,7 @@
                 <p class="book-stock-status">In Stock</p>
                 <p class="book-price-text">RM 15.00</p>
                 <button class="book-cart-btn" onclick="addToCart('The BFG')">Add to Cart</button>
-                <button class="book-buy-now-btn" onclick="window.location.href='checkout.html'">Buy Now</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('The BFG', '15.00')">Buy Now</button>
             </div>
 
             <div class="book-card-item">
@@ -113,7 +114,7 @@
                 <p class="book-stock-status">In Stock</p>
                 <p class="book-price-text">RM 15.00</p>
                 <button class="book-cart-btn" onclick="addToCart('The Magic Finger')">Add to Cart</button>
-                <button class="book-buy-now-btn" onclick="window.location.href='checkout.html'">Buy Now</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('The Magic Finger', '15.00')">Buy Now</button>
             </div>
       
             <div class="book-card-item">
@@ -134,7 +135,7 @@
                 <p class="book-stock-status">In Stock</p>
                 <p class="book-price-text">RM 15.00</p>
                 <button class="book-cart-btn" onclick="addToCart('Charlie and the Great Glass Elevator')">Add to Cart</button>
-                <<button class="book-buy-now-btn" onclick="window.location.href='checkout.html'">Buy Now</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('Charlie and the Great Glass Elevator', '15.00')">Buy Now</button>
             </div>
 
             <div class="book-card-item">
@@ -155,7 +156,7 @@
                 <p class="book-stock-status">In Stock</p>
                 <p class="book-price-text">RM 24.95</p>
                 <button class="book-cart-btn" onclick="addToCart('Esio Trot')">Add to Cart</button>
-                <button class="book-buy-now-btn" onclick="window.location.href='checkout.html'">Buy Now</button>
+                <button class="book-buy-now-btn" onclick="openPaymentModal('Esio Trot', '24.95')">Buy Now</button>
             </div>
 
             <div class="pagination-section">
