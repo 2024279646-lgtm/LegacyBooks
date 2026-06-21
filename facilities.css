@@ -100,11 +100,11 @@ header h1 {
 }
 
 /* ==========================================================================
-   NAVIGATION BAR (UPDATED TO MATCH FRIEND'S COLORS AND WEIGHTS PERFECTLY)
+   NAVIGATION BAR
    ========================================================================== */
 nav {
-    background: #8B6B4F; /* Matches friend's lighter brown exactly */
-    padding: 15px 5px;   /* Matches friend's sizing */
+    background: #8B6B4F; 
+    padding: 15px 5px;   
     text-align: center;
     position: sticky;
     top: 0;
@@ -117,8 +117,8 @@ nav a {
     color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
-    font-weight: bold;   /* Changed from 600 to standard bold to fix thickness */
-    font-size: 14px;     /* Changed from 15px to 14px */
+    font-weight: bold;   
+    font-size: 14px;     
     display: inline-block;
     transition: color 0.3s;
 }
@@ -193,7 +193,7 @@ nav a:hover {
 }
 
 /* ==========================================================================
-   FOOTER STYLES (REPLACED ENTIRELY WITH YOUR FRIEND'S PERFECT CSS CONFIG)
+   FOOTER STYLES
    ========================================================================== */
 .footer {
     background-color: #8B6B4F; 
