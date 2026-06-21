@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. GLOBAL STYLES & RESET
-   ========================================================================== */
+
 html, body {
     margin: 0 !important;
     padding: 0 !important;
@@ -28,9 +26,6 @@ body.about-page {
     background-size: cover !important;
 }
 
-/* ==========================================================================
-   2. HEADER & NAVIGATION (Legacy Books Branding)
-   ========================================================================== */
 header {
     background: #A8B89A;
     padding: 30px 20px;
@@ -88,9 +83,6 @@ nav a:hover {
     color: #D4A017;
 }
 
-/* ==========================================================================
-   3. PAGE TITLE & TEAM SECTION CONTAINER
-   ========================================================================== */
 .page-title {
     text-align: center;
     color: #D4A017;
@@ -119,9 +111,6 @@ nav a:hover {
     margin-top: 20px;
 }
 
-/* ==========================================================================
-   4. MEMBER CARDS & PORTRAITS
-   ========================================================================== */
 .member-card {
     background: #ffffff;
     width: 260px;
@@ -179,9 +168,6 @@ nav a:hover {
     font-style: italic;
 }
 
-/* ==========================================================================
-   5. REPAIRED FOOTER STYLING (Spaced Out Horizontal Layout)
-   ========================================================================== */
 .footer {
     background-color: #8B6B4F; 
     font-family: 'Poppins', sans-serif;
@@ -191,9 +177,9 @@ nav a:hover {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Spreads columns completely across the screen */
+    justify-content: space-between; 
     align-items: flex-start;
-    flex-wrap: nowrap; /* Forces them to stay side-by-side horizontally */
+    flex-wrap: nowrap;
     padding: 50px 40px 30px 40px;
     max-width: 1350px; 
     margin: 0 auto;
@@ -205,7 +191,6 @@ nav a:hover {
     min-width: 0; 
 }
 
-/* Slight extra sizing for the first description column */
 .footer-column:first-child {
     flex: 1.2; 
 }
@@ -291,9 +276,6 @@ nav a:hover {
     width: 100%;
 }
 
-/* ==========================================================================
-   6. RESPONSIVE MEDIA QUERIES
-   ========================================================================== */
 @media (max-width: 992px) {
     .footer-container {
         flex-wrap: wrap; /* Standard wrap layout for tablet devices */
@@ -312,4 +294,71 @@ nav a:hover {
         margin-bottom: 25px;
         width: 100%;
     }
+}
+
+.group-contact{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fdfaf6;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.group-contact h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #5c4033;
+    margin-bottom: 10px;
+}
+
+.group-contact p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-card{
+    width: 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.contact-card h3{
+    font-size: 16px;
+    color: #5c4033;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.contact-card p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.contact-card a{
+    display: inline-block;
+    padding: 10px 16px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.contact-card a:hover{
+    background: #1da851;
 }
