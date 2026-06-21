@@ -9,33 +9,35 @@
 <body>
 
     <div class="container">
-        <h2>Delivery Information</h2>
+        <h2>Checkout</h2>
+        <p class="subtitle">Please fill in your delivery details and choose a payment method.</p>
 
-        <form onsubmit="placeOrder(event)">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter your full name" required>
+        <form id="checkout-form" onsubmit="placeOrder(event)">
+            
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter your full name" required>
 
-            <label>Phone Number</label>
-            <input type="text" placeholder="Enter your phone number" required>
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter your phone number" required>
 
-            <label>Address</label>
-            <textarea rows="4" placeholder="Enter your address" required></textarea>
+            <label for="address">Address</label>
+            <textarea id="address" rows="4" placeholder="Enter your address" required></textarea>
 
-            <label>Postcode</label>
-            <input type="text" placeholder="Enter postcode" required>
+            <label for="postcode">Postcode</label>
+            <input type="text" id="postcode" placeholder="Enter postcode" required>
 
-            <label>State</label>
-            <input type="text" placeholder="Enter state" required>
+            <label for="state">State</label>
+            <input type="text" id="state" placeholder="Enter state" required>
 
-            <label>Select Payment Method</label>
+            <h3>Select Payment Method</h3>
 
             <div class="payment-option">
-                <input type="radio" name="payment_method" value="Online Banking" onchange="togglePaymentFields()" required>
-                <span>Online Banking (FPX)</span>
+                <input type="radio" id="onlinebanking" name="payment_method" value="Online Banking" onchange="togglePaymentFields()" required>
+                <label for="onlinebanking">Online Banking (FPX)</label>
             </div>
 
             <div id="bank-box" class="hidden-box">
-                <label>Select Your Bank</label>
+                <label for="bank-select">Select Your Bank</label>
                 <select id="bank-select">
                     <option value="">-- Choose Bank --</option>
                     <option value="CIMB">CIMB</option>
@@ -48,18 +50,18 @@
             </div>
 
             <div class="payment-option">
-                <input type="radio" name="payment_method" value="Credit/Debit Card" onchange="togglePaymentFields()">
-                <span>Credit / Debit Card</span>
+                <input type="radio" id="card" name="payment_method" value="Credit/Debit Card" onchange="togglePaymentFields()">
+                <label for="card">Credit / Debit Card</label>
             </div>
 
             <div id="card-box" class="hidden-box">
-                <label>Card Number</label>
+                <label for="card-number">Card Number</label>
                 <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
             </div>
 
             <div class="payment-option">
-                <input type="radio" name="payment_method" value="E-Wallet" onchange="togglePaymentFields()">
-                <span>E-Wallet</span>
+                <input type="radio" id="ewallet" name="payment_method" value="E-Wallet" onchange="togglePaymentFields()">
+                <label for="ewallet">E-Wallet</label>
             </div>
 
             <button type="submit">Place Order</button>
@@ -83,7 +85,7 @@
                 cardBox.style.display = "none";
                 cardInput.required = false;
                 cardInput.value = "";
-            }
+            } 
             else if (selectedMethod === "Credit/Debit Card") {
                 cardBox.style.display = "block";
                 cardInput.required = true;
@@ -91,7 +93,7 @@
                 bankBox.style.display = "none";
                 bankSelect.required = false;
                 bankSelect.value = "";
-            }
+            } 
             else {
                 bankBox.style.display = "none";
                 bankSelect.required = false;
@@ -106,19 +108,24 @@
         function placeOrder(event) {
             event.preventDefault();
 
+            var fullName = document.getElementById("fullname").value;
             var paymentMethod = document.querySelector('input[name="payment_method"]:checked').value;
 
             if (paymentMethod === "Online Banking") {
                 var bank = document.getElementById("bank-select").value;
-                alert("Order placed successfully using Online Banking (" + bank + ")!");
-            }
+                alert("Thank you " + fullName + "! Your order has been placed successfully via Online Banking (" + bank + ").");
+            } 
             else if (paymentMethod === "Credit/Debit Card") {
                 var cardNumber = document.getElementById("card-number").value;
-                alert("Order placed successfully using Credit/Debit Card ending with " + cardNumber.slice(-4) + "!");
-            }
+                alert("Thank you " + fullName + "! Your order has been placed successfully via Credit/Debit Card ending with " + cardNumber.slice(-4) + ".");
+            } 
             else {
-                alert("Order placed successfully using E-Wallet!");
+                alert("Thank you " + fullName + "! Your order has been placed successfully via E-Wallet.");
             }
+
+            document.getElementById("checkout-form").reset();
+            document.getElementById("bank-box").style.display = "none";
+            document.getElementById("card-box").style.display = "none";
         }
     </script>
 
