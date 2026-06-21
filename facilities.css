@@ -13,7 +13,6 @@ body {
 }
 
 header {
-   .main-header, header {
     background-color: #9eb099; 
     text-align: center;
     padding: 35px 15px 40px 15px;
@@ -101,32 +100,33 @@ header h1 {
 }
 
 /* ==========================================================================
-   NAVIGATION BAR
+   NAVIGATION BAR (UPDATED TO MATCH FRIEND'S COLORS AND WEIGHTS PERFECTLY)
    ========================================================================== */
 nav {
-    background: #73563F; /* Warna coklat gelap bar navigasi utama anda */
-    padding: 12px 10px;
+    background: #8B6B4F; /* Matches friend's lighter brown exactly */
+    padding: 15px 5px;   /* Matches friend's sizing */
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 !important;
 }
 
 nav a {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: bold;   /* Changed from 600 to standard bold to fix thickness */
+    font-size: 14px;     /* Changed from 15px to 14px */
     display: inline-block;
-    padding: 5px 0;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 nav a:hover {
     color: #D4A017;
 }
+
 /* ==========================================================================
    MAIN CONTENT & VIDEO LAYOUT
    ========================================================================== */
@@ -193,118 +193,129 @@ nav a:hover {
 }
 
 /* ==========================================================================
-   UPDATED FOOTER STYLES (MATCHES THE NAVIGATION BAR COLOUR #73563F)
+   FOOTER STYLES (REPLACED ENTIRELY WITH YOUR FRIEND'S PERFECT CSS CONFIG)
    ========================================================================== */
-.main-footer {
-    background: #73563F; /* DIUBAH: Menyertai warna coklat gelap bar navigasi anda */
-    color: #FFFFFF;
-    padding: 60px 20px 0px 20px;
-    font-size: 14px;
+.footer {
+    background-color: #8B6B4F; 
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
     width: 100%;
 }
 
-.footer-columns-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+.footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    padding: 50px 40px 30px 40px;
+    max-width: 1350px; 
+    margin: 0 auto;
+    gap: 20px;
 }
 
-.footer-col-item {
+.footer-column {
     flex: 1;
     min-width: 180px;
 }
 
-.col-width-large {
-    flex: 1.5;
-    min-width: 250px;
+.footer-column.contact-column {
+    min-width: 290px; 
+    white-space: nowrap; 
 }
 
-.col-width-medium {
-    flex: 1.2;
-    min-width: 220px;
-}
-
-.footer-col-heading {
-    color: #D4A017; /* Kekal warna emas korporat asal agar tulisan menyerlah tajam */
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    margin-bottom: 20px;
+.footer-column h3 {
+    color: #D4A017; 
+    font-size: 16px;
     font-weight: 600;
+    margin-bottom: 25px;
     letter-spacing: 0.5px;
 }
 
-.footer-col-paragraph {
-    line-height: 1.8;
-    color: #EEEEEE;
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 15px;
 }
 
-.footer-label-gold {
-    font-weight: 600;
+.footer-column p span.highlight {
     color: #D4A017;
-    margin-bottom: 2px;
 }
 
-.footer-quick-links {
+.footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-quick-links li {
-    margin-bottom: 8px;
+.footer-column ul li {
+    margin-bottom: 15px;
 }
 
-.footer-quick-links li a {
-    color: #EEEEEE;
+.footer-column ul li a {
+    color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s ease;
-    line-height: 1.8;
+    font-size: 14px;
+    transition: color 0.2s ease;
 }
 
-.footer-quick-links li a:hover {
+.footer-column ul li a:hover {
     color: #D4A017;
 }
 
-.footer-horizontal-line {
-    max-width: 1200px;
-    margin: 40px auto 30px auto;
+.footer-divider {
     border: 0;
     height: 1px;
-    background: #8C6A50; /* Garisan halus pemisah berton coklat harmoni */
-}
-
-.footer-academic-disclaimer {
-    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.15);
+    max-width: 1270px;
     margin: 0 auto;
-    padding-bottom: 40px;
-    font-size: 12px;
-    color: #DDDDDD;
-    line-height: 1.6;
 }
 
-.footer-academic-disclaimer strong {
-    color: #DDDDDD;
-}
-
-.footer-bottom-dark-bar {
-    background: #5E4633; /* Warna coklat pekat sikit khusus untuk jalur hak cipta bawah */
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 20px;
+.disclaimer-area {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 30px 20px;
     text-align: center;
-    border-top: 1px solid #6B503A;
+    color: #ffffff;
 }
 
-.footer-bottom-dark-bar p {
+.disclaimer-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.meta-info {
     font-size: 13px;
-    color: #D1C4BA;
+    margin: 8px 0;
+    opacity: 0.8;
 }
 
-.clearfix {
-    clear: both;
+.copyright {
+    text-align: center;
+    padding: 20px;
+    background-color: #6F543D;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Footer Helpers */
+@media (max-width: 1024px) {
+    .footer-column.contact-column {
+        white-space: normal; 
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .footer-column {
+        margin-bottom: 25px;
+        width: 100%;
+    }
 }
 
 /* ==========================================================================
