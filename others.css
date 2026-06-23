@@ -5,57 +5,71 @@
 }
 
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    background-color: #f7f3ee;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcfbf7; 
     color: #333333;
 }
 
-/* HEADER */
-header {
-    background-color: #9eb099;
+.clearfix {
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.main-header, header {
+    background-color: #9eb099; 
     text-align: center;
     padding: 35px 15px 40px 15px;
+    margin: 0 !important;
 }
 
-.logo {
-    width: 170px;
+.logo-container .site-logo {
+    width: 170px; 
     height: auto;
     display: block;
-    margin: 0 auto 18px auto;
+    margin: 0 auto 20px auto;
 }
 
-header h1 {
+.site-title {
     font-family: 'Playfair Display', serif;
-    font-size: 52px;
-    color: #D4A017;
+    font-size: 52px; 
+    color: #D4A017; 
     font-weight: 700;
+    letter-spacing: 0.5px;
     margin-bottom: 5px;
 }
 
-.slogan {
+.site-slogan {
     color: #ffffff;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
-/* NAVIGATION */
-nav {
-    background-color: #8B6B4F;
+.navbar-container {
+    background-color: #705844; 
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
-
-nav a {
+.navbar-links {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.nav-item {
     display: inline-block;
     color: #ffffff;
     text-decoration: none;
-    padding: 18px 16px;
+    padding: 15px 20px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: bold;
 }
-
-nav a:hover {
-    background-color: #D4A017;
+.nav-item:hover, .nav-item.active {
+    background-color: #cc9933;
+    color: #ffffff;
 }
 .dropdown {
     display: inline-block;
@@ -440,23 +454,4 @@ nav a:hover {
     background: #6f543d;
     font-size: 14px;
     color: #e5ded9;
-}
-
-/* ===== BUY NOW BUTTON ===== */
-.book-buy-now-btn{
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    background-color: #d4a017;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.book-buy-now-btn:hover{
-    background-color: #b8860b;
 }
