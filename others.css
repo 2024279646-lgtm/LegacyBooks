@@ -5,22 +5,21 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fcfbf7; 
+    font-family: 'Poppins', sans-serif;
+    background-color: #FDFBF7; 
+    overflow-x: hidden;
     color: #333333;
 }
 
 .clearfix {
     clear: both;
-    display: block;
-    height: 0;
 }
 
-.main-header, header {
-    background-color: #9eb099; 
+.main-header {
+    background-color: #A3B899;
+    padding: 40px 20px;
     text-align: center;
-    padding: 35px 15px 40px 15px;
-    margin: 0 !important;
+    border-bottom: 4px solid #8B6B4F;
 }
 
 .logo-container .site-logo {
@@ -48,28 +47,24 @@ body {
 }
 
 .navbar-container {
-    background-color: #705844; 
+    background: #8B6B4F;
+    padding: 15px 0;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 999;
 }
-.navbar-links {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-.nav-item {
-    display: inline-block;
+
+.navbar-links .nav-item {
     color: #ffffff;
     text-decoration: none;
-    padding: 15px 20px;
+    margin: 0 12px;
+    font-weight: 600;
     font-size: 14px;
-    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s ease;
 }
-.nav-item:hover, .nav-item.active {
-    background-color: #cc9933;
-    color: #ffffff;
+
+.navbar-links .nav-item:hover, 
+.navbar-links .nav-item.active {
+    color: #D4A017;
 }
 .dropdown {
     display: inline-block;
