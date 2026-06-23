@@ -455,3 +455,22 @@ body {
     font-size: 14px;
     color: #e5ded9;
 }
+
+/* ===== BUY NOW BUTTON ===== */
+.book-buy-now-btn{
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: #d4a017;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-buy-now-btn:hover{
+    background-color: #b8860b;
+}
