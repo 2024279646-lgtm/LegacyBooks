@@ -5,66 +5,57 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #FDFBF7; 
-    overflow-x: hidden;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f7f3ee;
     color: #333333;
 }
 
-.clearfix {
-    clear: both;
-}
-
-.main-header {
-    background-color: #A3B899;
-    padding: 40px 20px;
+/* HEADER */
+header {
+    background-color: #9eb099;
     text-align: center;
-    border-bottom: 4px solid #8B6B4F;
+    padding: 35px 15px 40px 15px;
 }
 
-.logo-container .site-logo {
-    width: 170px; 
+.logo {
+    width: 170px;
     height: auto;
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 18px auto;
 }
 
-.site-title {
+header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 52px; 
-    color: #D4A017; 
+    font-size: 52px;
+    color: #D4A017;
     font-weight: 700;
-    letter-spacing: 0.5px;
     margin-bottom: 5px;
 }
 
-.site-slogan {
+.slogan {
     color: #ffffff;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
-    letter-spacing: 0.5px;
 }
 
-.navbar-container {
-    background: #8B6B4F;
-    padding: 15px 0;
+/* NAVIGATION */
+nav {
+    background-color: #8B6B4F;
     text-align: center;
 }
 
-.navbar-links .nav-item {
+nav a {
+    display: inline-block;
     color: #ffffff;
     text-decoration: none;
-    margin: 0 12px;
-    font-weight: 600;
+    padding: 18px 16px;
     font-size: 14px;
-    display: inline-block;
-    transition: color 0.3s ease;
+    font-weight: 600;
 }
 
-.navbar-links .nav-item:hover, 
-.navbar-links .nav-item.active {
-    color: #D4A017;
+nav a:hover {
+    background-color: #D4A017;
 }
 .dropdown {
     display: inline-block;
